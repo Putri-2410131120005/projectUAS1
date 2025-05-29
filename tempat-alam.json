@@ -1,0 +1,15 @@
+{
+  "tangkisung": {
+    "nama": "Pantai Tangkisung",
+    "lokasi": "Tangkisung, Kabupaten Kotabaru, Kalimantan Selatan",
+    "koordinat": [-3.8415, 115.2550],
+    "gambar": "/z-Encanto.jpg"
+  },
+
+  "batakan": {
+    "nama": "Pantai Batakan",
+    "lokasi": "Batakan, Kec. Panyipatan, Kab. Tanah Laut, Kalimantan Selatan",
+    "koordinat": [-4.1202, 114.5659],
+    "gambar": "/z-Encanto.jpg"
+  }
+}

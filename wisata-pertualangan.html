@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jelajah Banua</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #a5bfff;
+    }
+    .section-title {
+      background-color: #ffe150;
+      padding: 10px 0;
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card {
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    .btn-detail {
+      background-color: #ffe150;
+      color: black;
+      border: none;
+    }
+    .btn-detail:hover{
+        background-color: #f3e188;
+    }
+    .navbar-nav .nav-link.active {
+      background-color: white;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3b5998; color: white;">
+    <div class="container-fluid">
+      <a href="#"><img src="/z-instagram.png" alt="Logo" style="height: 40px; width: auto;" class="me-2 p-2 rounded-circle"></a>
+      <a href="#"><img src="/z-facebook.png" alt="Logo" style="height: 40px; width: auto;" class="me-2 p-2 rounded-circle"></a>
+      <a href="#"><img src="/z-youtube.png" alt="Logo" style="height: 40px; width: auto;" class="me-2 p-2 rounded-circle"></a>
+      <p class="navbar-brand fw-bold pt-3">Jelajah Banua</p>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/homepage.html">Beranda</a>
+            </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="wisataDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Wisata
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="wisataDropdown">
+              <li><a class="dropdown-item" href="/wisata-alam.html">Wisata Alam</a></li>
+              <li><a class="dropdown-item" href="/wisata-religi.html">Wisata Religi</a></li>
+              <li><a class="dropdown-item" href="/wisata-edukasi.html">Wisata Edukasi</a></li>
+              <li><a class="dropdown-item" href="/wisata-buatan.html">Wisata Buatan</a></li>
+              <li><a class="dropdown-item" href="/wisata-budayaSejarah.html">Wisata Budaya & Sejarah</a></li>
+              <li><a class="dropdown-item" href="/wisata-pertualangan.html">Wisata Petualangan</a></li>
+              <li><a class="dropdown-item" href="/wisata-kuliner.html">Wisata Kuliner</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tour Guide</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tentang Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Hubungi Kami</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Judul -->
+<div class="section-title mt-4">Wisata Pertualangan Extrem</div>
+
+<!-- Galeri Wisata -->
+<div class="container py-5">
+  <div class="row justify-content-center" id="galeri-tempat">
+    <!-- Kartu akan dimuat otomatis oleh JavaScript -->
+  </div>
+</div>
+
+
+
+<!--footer-->
+    <footer class="text-center p-5" style="background-color: #3b5998; color: white;">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Jelajah Banua</h5>
+            <p>Portal Wisata Digital Kalimantan Selatan</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Navigasi</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Beranda</a></li>
+              <li><a href="#" class="text-white">Wisata</a></li>
+              <li><a href="#" class="text-white">Tour Guide</a></li>
+              <li><a href="#" class="text-white">Tentang Kami</a></li>
+              <li><a href="#" class="text-white">Hubungi Kami</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Kontak</h5>
+            <p>Email: info@jelajahbanua.com<br />Telepon: +62 815 2916 2914</p>
+          </div>
+        </div>
+        <hr />
+        <p class="mb-0">&copy; 2025 Jelajah Banua. All right reserved | Kebijakan Privasi | Syarat & Ketentuan</p>
+      </div>
+    </footer>
+
+    <script>
+  fetch("tempat-kuliner.json")
+    .then(response => response.json())
+    .then(data => {
+      const galeri = document.getElementById("galeri-tempat");
+
+      for (const id in data) {
+        const tempat = data[id];
+
+        const col = document.createElement("div");
+        col.className = "col-md-3 col-sm-6";
+
+        const card = `
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">${tempat.nama}</h5>
+              <img src="${tempat.gambar || '/z-Encanto.jpg'}" class="card-img-top p-3" alt="${tempat.nama}">
+              <a href="detail-tempat.html?id=${id}" class="btn btn-detail">Lihat Detail</a>
+            </div>
+          </div>
+        `;
+
+        col.innerHTML = card;
+        galeri.appendChild(col);
+      }
+    })
+    .catch(error => {
+      console.error("Gagal memuat data tempat-alam.json:", error);
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
