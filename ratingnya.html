@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Pantai Batakan</title>
+    <style>
+        .bintang {
+            font-size: 40px;
+            color: gray;
+        }
+
+        .bintang.aktif {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Pantai Batakan</h2>
+    <p>Rating pengunjung:</p>
+    <div id="bintang-container">
+        <span class="bintang" data-nilai="1">★</span>
+        <span class="bintang" data-nilai="2">★</span>
+        <span class="bintang" data-nilai="3">★</span>
+        <span class="bintang" data-nilai="4">★</span>
+        <span class="bintang" data-nilai="5">★</span>
+    </div>
+    <p id="info-rating">Memuat data..</p>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBK1vKLs1KdsAfgex8uue77T8BH98p6tRY",
+            authDomain: "percobaanrating.firebaseapp.com",
+            databaseURL: "https://percobaanrating-default-rtdb.firebaseio.com",
+            projectId: "percobaanrating",
+            storageBucket: "percobaanrating.appspot.com",
+            messagingSenderId: "904226782106",
+            appId: "1:904226782106:web:0190958c1a93ed677f9823"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.database().ref("tempat_wisata/pantai_batakan");
+
+        db.once("value").then(snapshot => {
+            const data = snapshot.val() || { totalNilai: 0, jumlahPenilai: 0 };
+            const rata2 = data.jumlahPenilai === 0 ? 0 : (data.totalNilai / data.jumlahPenilai);
+            const rata2fix = rata2.toFixed(2);
+            document.getElementById("info-rating").innerText =
+                `Rating: ${rata2fix} dari ${data.jumlahPenilai} penilai`;
+
+            document.querySelectorAll(".bintang").forEach(b => {
+                const nilai = parseInt(b.dataset.nilai);
+                if (nilai <= Math.floor(rata2)) {
+                    b.classList.add("aktif");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
