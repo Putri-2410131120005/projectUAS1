@@ -1,0 +1,35 @@
+body {
+      background-color: #a5bfff;
+    }
+    .section-title {
+      background-color: #ffe150;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card {
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+.card-title {
+  min-height: 3em; /* supaya tinggi judul seragam */
+}
+    .btn-detail {
+      background-color: #ffe150;
+      color: black;
+      border: none;
+    }
+    .btn-detail:hover{
+        background-color: #f3e188;
+    }
+    .navbar-nav .nav-link.active {
+      background-color: white;
+      border-radius: 10px;
+    }
