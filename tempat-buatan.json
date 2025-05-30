@@ -3,60 +3,164 @@
     "nama": "Menara Pandang Banjarmasin",
     "lokasi": "Jl. Kapten Pierre Tendean No.07, Gadang, Banjarmasin Tengah, Kalimantan Selatan",
     "koordinat": [-3.3196, 114.5913],
-    "gambar": "/z-Encanto.jpg"
+    "tumbnail":"z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ],
+    "jam-operasional": "08.00 - 18.00 WITA",
+    "harga-tiket": {
+      "dewasa": "Rp10.000",
+      "anak": "Rp5.000",
+      "parkir_motor": "Rp2.000",
+      "parkir_mobil": "Rp5.000"
+    },
+    "fasilitas": [
+      "Area Parkir",
+      "Gazebo",
+      "Toilet",
+      "Warung Makan",
+      "Spot Foto",
+      "Penyewaan Ban"
+    ]
   },
   "labirin-pelaihari": {
     "nama": "Taman Labirin Pelaihari",
     "lokasi": "Jl. Ahmad Yani Km 51, Tambang Ulang, Kabupaten Tanah Laut, Kalimantan Selatan",
     "koordinat": [-3.8005, 114.8478],
-    "gambar": "/z-Encanto.jpg"
+    "tumbnail":"z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ],
+    "jam-operasional": "13.00 - 18.00 WITA",
+    "harga-tiket": {
+      "dewasa": "Rp15.000",
+      "anak": "Rp55.000",
+      "parkir_motor": "Rp3.000",
+      "parkir_mobil": "Rp4.000"
+    },
+    "fasilitas": [
+      "Area Parkir a",
+      "Gazebo b",
+      "Toilet c",
+      "Warung Makan d",
+      "Spot Foto e",
+      "Penyewaan Ban f"
+    ]
   },
   "kampung-pelangi": {
     "nama": "Kampung Pelangi Banjarbaru",
     "lokasi": "Kelurahan Guntung Paikat, Banjarbaru Selatan, Kota Banjarbaru, Kalimantan Selatan",
     "koordinat": [-3.4565, 114.8453],
-    "gambar": "/z-Encanto.jpg"
+    "tumbnail":"z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ],
+    "jam-operasional":"",
+    "harga-tiket":"",
+    "fasilitas":""
   },
   "edupark-rusa": {
     "nama": "Edupark Rusa Sambar",
     "lokasi": "Jalan A. Yani Km 28.7, Landasan Ulin, Banjarbaru, Kalimantan Selatan",
     "koordinat": [-3.4531, 114.8098],
-    "gambar": "/z-Encanto.jpg"
+    "tumbnail":"z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ],
+    "jam-operasional":"",
+    "harga-tiket":"",
+    "fasilitas":""
   },
   "taman-pintar": {
     "nama": "Taman Pintar Yogyakarta",
     "lokasi": "Jl. Panembahan Senopati No.1-3, Ngupasan, Gondomanan, Yogyakarta",
     "koordinat": [-7.8016, 110.3671],
-    "gambar": "/z-Encanto.jpg"
+    "tumbnail":"z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ],
+    "jam-operasional":"",
+    "harga-tiket":"",
+    "fasilitas":""
   },
   "kebun-raya-banua": {
     "nama": "Kebun Raya Banua",
     "lokasi": "Jl. Aneka Tambang, Palam, Kecamatan Cempaka, Banjarbaru, Kalimantan Selatan",
     "koordinat": [-3.4719, 114.8457],
-    "gambar": "/z-Encanto.jpg"
+    "tumbnail":"z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ],
+    "jam-operasional":"",
+    "harga-tiket":"",
+    "fasilitas":""
   },
   "amanah-borneo-park": {
     "nama": "Amanah Borneo Park (ABP)",
     "lokasi": "Jl. Taruna Bhakti, Palam, Kecamatan Cempaka, Banjarbaru, Kalimantan Selatan",
     "koordinat": [-3.4739, 114.8096],
-    "gambar": "/z-Encanto.jpg"
+    "tumbnail":"z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ],
+    "jam-operasional":"",
+    "harga-tiket":"",
+    "fasilitas":""
   },
   "kebun-durian-patas": {
     "nama": "Agrowisata Kebun Durian Patas",
     "lokasi": "Desa Patas, Kecamatan Tanta, Kabupaten Tabalong, Kalimantan Selatan",
     "koordinat": [-2.1050, 115.3680],
-    "gambar": "/z-Encanto.jpg"
+    "tumbnail":"z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ],
+    "jam-operasional":"",
+    "harga-tiket":"",
+    "fasilitas":""
   },
   "jembatan-nateh": {
     "nama": "Jembatan Gantung Desa Nateh",
     "lokasi": "Desa Nateh, Kecamatan Batang Alai Timur, Kabupaten Hulu Sungai Tengah, Kalimantan Selatan",
     "koordinat": [-2.5833, 115.4167],
-    "gambar": "/z-Encanto.jpg"
+    "tumbnail":"z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ],
+    "jam-operasional":"",
+    "harga-tiket":"",
+    "fasilitas":""
   },
   "kampung-hijau": {
     "nama": "Kampung Hijau Sungai Jingah",
     "lokasi": "Kelurahan Sungai Jingah, Banjarmasin Utara, Kota Banjarmasin, Kalimantan Selatan",
     "koordinat": [-3.2985, 114.6032],
-    "gambar": "/z-Encanto.jpg"
+    "tumbnail":"z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ],
+    "jam-operasional":"",
+    "harga-tiket":"",
+    "fasilitas":""
   }
 }

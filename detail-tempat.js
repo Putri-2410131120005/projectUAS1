@@ -26,17 +26,6 @@ Promise.all([
     document.getElementById("lokasi-tempat").innerHTML =
       "<strong>Location:</strong><br>" + data.lokasi;
 
-    const galeri = document.getElementById("gambar-tempat");
-    galeri.innerHTML = "";
-
-    if (Array.isArray(data.gambar)) {
-      data.gambar.forEach((url) => {
-        const img = document.createElement("img");
-        img.src = url;
-        galeri.appendChild(img);
-      });
-    }
-
     setupMap(data);
     initKomentar(tempatId);
   })

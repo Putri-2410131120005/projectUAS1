@@ -1,270 +1,187 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Destinasi Wisata - Teluk Tamiang</title>
-
-  <!-- Bootstrap CSS & JS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wisata Buatan Kalimantan Selatan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      margin: 0;
-    }
-
-    .container {
-      flex: 1;
-    }
-
-    .carousel-item img {
-      height: 500px;
-      object-fit: cover;
-      width: 100%;
-    }
-
-    .rating-container {
-      display: inline-flex;
-      align-items: center;
-      font-size: 16px;
-      margin-left: 10px;
-    }
-
-    #bintang-container {
-      margin: 0 6px;
-      font-size: 18px;
-    }
-
+    .carousel-item img { height: 300px; object-fit: cover; }
+    .card { margin-bottom: 2rem; }
     .bintang {
+      font-size: 24px;
       color: gray;
     }
-
     .bintang.aktif {
       color: gold;
     }
-
-    .jumlah-penilai {
-      color: #777;
-      font-size: 14px;
-      margin-left: 4px;
-    }
-
-    .info-title {
-      font-weight: bold;
-      margin-bottom: 8px;
-    }
-
-    /* FOOTER STYLING */
-    footer {
-      background-color: #27548A;
-      color: #f0f0f0;
-      padding: 40px 20px 20px;
-      font-size: 14px;
-    }
-
-    .footer-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 30px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .footer-container div {
-      flex: 1 1 250px;
-    }
-
-    .footer-container h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-      color: #ffc107;
-    }
-
-    .footer-container ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .footer-container ul li {
-      margin-bottom: 8px;
-    }
-
-    .footer-container ul li a {
-      color: #f0f0f0;
-      text-decoration: none;
-    }
-
-    .footer-container ul li a:hover {
-      text-decoration: underline;
-    }
-
-    .socials .icon {
-      margin-right: 10px;
-      font-size: 20px;
-      cursor: pointer;
-    }
-
-    .footer-bottom {
-      text-align: center;
-      border-top: 1px solid #444;
-      padding-top: 15px;
-      margin-top: 20px;
-      font-size: 13px;
-      color: #aaa;
-    }
-
-    .footer-bottom a {
-      color: #ccc;
-      text-decoration: none;
-    }
-
-    .footer-bottom a:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
+<body style="background-color: #e6f0ff;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #3b5998;">
+      <div class="container-fluid">
+        <a href="#"><img src="/z-instagram.png" alt="Logo" class="me-2 p-2 rounded-circle" style="height: 40px;"></a>
+        <a href="#"><img src="/z-facebook.png" alt="Logo" class="me-2 p-2 rounded-circle" style="height: 40px;"></a>
+        <a href="#"><img src="/z-youtube.png" alt="Logo" class="me-2 p-2 rounded-circle" style="height: 40px;"></a>
+        <p class="navbar-brand fw-bold pt-3">Jelajah Banua</p>
 
-<body>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <!-- Konten Utama -->
-  <div class="container py-5">
-    <h1 class="mb-4">Destinasi Wisata Alam</h1>
-
-    <!-- Card Galeri dan Info Wisata -->
-    <div class="card shadow-sm mb-4">
-      <div class="card-body">
-        <!-- Carousel Bootstrap (Diperbaiki) -->
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="pantai teluk tamiang.jpg" class="d-block w-100" alt="Teluk Tamiang 1">
-            </div>
-            <div class="carousel-item">
-              <img src="pantaiteluktamiang2.jpg" class="d-block w-100" alt="Teluk Tamiang 2">
-            </div>
-            <div class="carousel-item">
-              <img src="pantaitamiang3.jpg" class="d-block w-100" alt="Teluk Tamiang 3">
-            </div>
-            <div class="carousel-item">
-              <img src="pantaitamiang4.jpeg" class="d-block w-100" alt="Teluk Tamiang 4">
-            </div>
-            <div class="carousel-item">
-              <img src="pantaitamiang5.jpg" class="d-block w-100" alt="Teluk Tamiang 5">
-            </div>
-            <div class="carousel-item">
-              <img src="pantaitamiang6.jpg" class="d-block w-100" alt="Teluk Tamiang 6">
-            </div>
-            <div class="carousel-item">
-              <img src="pantaitamiang7.jpg" class="d-block w-100" alt="Teluk Tamiang 7">
-            </div>
-            <div class="carousel-item">
-              <img src="pantaitamiang8.jpg" class="d-block w-100" alt="Teluk Tamiang 8">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-
-        <!-- Judul + Rating -->
-        <div class="d-flex justify-content-between align-items-center mb-3">
-          <h3 class="mb-0">Pantai Teluk Tamiang</h3>
-          <a href="memberiRating.html?wisata=pantai_batakan" class="btn btn-warning">Beri Rating (ini seharusnya lebih detail)</a>
-        </div>
-        <div class="rating-container mb-3">
-          <span id="nilai-rating">...</span>
-          <span id="bintang-container"></span>
-          <span id="jumlah-penilai" class="jumlah-penilai"></span>
-        </div>
-
-        <!-- Deskripsi -->
-        <p class="mb-4">
-          Pantai Teluk Tamiang terletak di Kalimantan Selatan, dikenal dengan pasir putih dan air laut yang jernih.
-          Cocok untuk berlibur dan menikmati suasana alam tropis.
-        </p>
-
-        <!-- Informasi -->
-        <div class="row">
-          <div class="col-md-4 mb-3">
-            <div class="border rounded p-3 h-100">
-              <h5 class="info-title">Jam Operasional</h5>
-              <p class="mb-0">Setiap Hari: <strong>08.00 - 18.00 WITA</strong></p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="border rounded p-3 h-100">
-              <h5 class="info-title">Harga Tiket Masuk</h5>
-              <ul class="mb-0">
-                <li>Dewasa: Rp10.000</li>
-                <li>Anak-anak: Rp5.000</li>
-                <li>Parkir Motor: Rp2.000</li>
-                <li>Parkir Mobil: Rp5.000</li>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/homepage.html">Beranda</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="wisataDropdown" role="button" data-bs-toggle="dropdown">
+                Wisata
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/wisata-alam.html">Wisata Alam</a></li>
+                <li><a class="dropdown-item" href="/wisata-religi.html">Wisata Religi</a></li>
+                <li><a class="dropdown-item" href="/wisata-edukasi.html">Wisata Edukasi</a></li>
+                <li><a class="dropdown-item" href="/wisata-buatan.html">Wisata Buatan</a></li>
+                <li><a class="dropdown-item" href="/wisata-budayaSejarah.html">Wisata Budaya & Sejarah</a></li>
+                <li><a class="dropdown-item" href="/wisata-pertualangan.html">Wisata Petualangan</a></li>
+                <li><a class="dropdown-item" href="/wisata-kuliner.html">Wisata Kuliner</a></li>
               </ul>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="border rounded p-3 h-100">
-              <h5 class="info-title">Fasilitas</h5>
-              <ul class="mb-0">
-                <li>Area Parkir</li>
-                <li>Gazebo</li>
-                <li>Toilet</li>
-                <li>Warung Makan</li>
-                <li>Spot Foto</li>
-                <li>Penyewaan Ban</li>
-              </ul>
-            </div>
-          </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Tour Guide</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Tentang Kami</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Hubungi Kami</a></li>
+          </ul>
         </div>
       </div>
-    </div>
+    </nav>
+
+  <div class="container py-5">
+    <div id="wisata-container"></div>
   </div>
 
-  <!-- Footer (Tetap Sama) -->
-  <footer>
-    <div class="footer-container">
-      <div>
-        <h3>Jelajah Banua</h3>
-        <p>Portal Wisata Digital Kalimantan Selatan</p>
-      </div>
-      <div>
-        <h3>Navigasi</h3>
-        <ul>
-          <li><a href="#">Beranda</a></li>
-          <li><a href="#">Destinasi Wisata</a></li>
-          <li><a href="#">Tour Guide</a></li>
-          <li><a href="#">Tentang Kami</a></li>
-          <li><a href="#">Hubungi Kami</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Kontak</h3>
-        <p>Email: info@jelajahbanua.com</p>
-        <p>Telepon: +62 815 2151 9244</p>
-        <div class="socials">
-          <i class="icon">📷</i>
-          <i class="icon">📘</i>
-          <i class="icon">▶️</i>
+  <footer class="text-light pt-5 pb-3" style="background-color: #3b5998;">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-4">
+            <h3 class="text-warning fs-5 mb-2">Jelajah Banua</h3>
+            <p class="mb-0">Portal Wisata Digital Kalimantan Selatan</p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="text-warning fs-5 mb-2">Navigasi</h3>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Beranda</a></li>
+              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Destinasi Wisata</a></li>
+              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Tour Guide</a></li>
+              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Tentang Kami</a></li>
+              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Hubungi Kami</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3 class="text-warning fs-5 mb-2">Kontak</h3>
+            <p class="mb-1">Email: info@jelajahbanua.com</p>
+            <p class="mb-2">Telepon: +62 815 2151 9244</p>
+          </div>
+        </div>
+
+        <div class="text-center border-top border-secondary pt-3 mt-4 text-light small">
+          © 2025 Jelajah Banua. All right reserved. |
+          <a href="#" class="text-decoration-none text-light">Kebijakan Privasi</a> |
+          <a href="#" class="text-decoration-none text-light">Syarat & Ketentuan</a>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      © 2025 Jelajah Banua. All right reserved. | <a href="#">Kebijakan Privasi</a> | <a href="#">Syarat & Ketentuan</a>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Firebase Script -->
+  <!-- Ambil Data JSON -->
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+
+    Promise.all([
+      fetch("tempat-alam.json").then(res => res.json()),
+      fetch("tempat-religi.json").then(res => res.json()),
+      fetch("tempat-edukasi.json").then(res => res.json()),
+      fetch("tempat-buatan.json").then(res => res.json()),
+      fetch("tempat-budayaSejarah.json").then(res => res.json()),
+      fetch("tempat-kuliner.json").then(res => res.json()),
+      fetch("tempat-pertualangan.json").then(res => res.json())
+    ])
+    .then(([alam, religi, edukasi, buatan, budayaSejarah, kuliner, pertualangan]) => {
+      const semuaTempat = { ...alam, ...religi, ...edukasi, ...buatan, ...budayaSejarah, ...kuliner, ...pertualangan };
+      const tempat = semuaTempat[id];
+
+      const container = document.getElementById("wisata-container");
+      container.innerHTML = "";
+
+      if (!tempat) {
+        container.innerHTML = `<div class="alert alert-danger">Tempat wisata tidak ditemukan.</div>`;
+        return;
+      }
+
+      const carouselId = `carousel-${id}`;
+      const images = (tempat.gambar || []).map((img, i) => `
+        <div class="carousel-item${i === 0 ? ' active' : ''}">
+          <img src="${img}" class="d-block w-100" alt="${tempat.nama} ${i+1}">
+        </div>
+      `).join("");
+
+      const tiket = tempat["harga-tiket"]
+        ? Object.entries(tempat["harga-tiket"]).map(
+            ([jenis, harga]) => `<li>${jenis.replace('_', ' ')}: ${harga}</li>`
+          ).join("")
+        : "<li>Informasi tidak tersedia</li>";
+
+      const fasilitas = tempat.fasilitas && tempat.fasilitas.length
+        ? tempat.fasilitas.map(f => `<li>${f}</li>`).join("")
+        : "<li>Informasi tidak tersedia</li>";
+
+      container.innerHTML = `
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <div id="${carouselId}" class="carousel slide mb-3" data-bs-ride="carousel">
+              <div class="carousel-inner">${images}</div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#${carouselId}" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#${carouselId}" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+            <h3>${tempat.nama}</h3>
+            <p>${tempat.lokasi}</p>
+            <p><strong>Jam Operasional:</strong> ${tempat["jam-operasional"] || "Informasi tidak tersedia"}</p>
+            <div><strong>Harga Tiket:</strong><ul>${tiket}</ul></div>
+            <div><strong>Fasilitas:</strong><ul>${fasilitas}</ul></div>
+
+            <!-- RATING -->
+            <div id="rating-pengunjung" class="mt-3">
+              <strong>Rating Pengunjung:</strong>
+              <div id="bintang-container">
+                <span class="bintang" data-nilai="1">★</span>
+                <span class="bintang" data-nilai="2">★</span>
+                <span class="bintang" data-nilai="3">★</span>
+                <span class="bintang" data-nilai="4">★</span>
+                <span class="bintang" data-nilai="5">★</span>
+              </div>
+              <p id="info-rating">Memuat rating...</p>
+            </div>
+
+            <a href="detail-tempat.html?id=${id}" class="btn btn-warning mt-2">Lihat Selanjutnya</a>
+          </div>
+        </div>
+      `;
+
+      // Inisialisasi Firebase rating setelah data tempat ditampilkan
+      tampilkanRating(id);
+    })
+    .catch(error => {
+      document.getElementById("wisata-container").innerHTML = `<div class="alert alert-danger">${error.message}</div>`;
+    });
+  </script>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Firebase -->
   <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js"></script>
   <script>
@@ -277,30 +194,30 @@
       messagingSenderId: "904226782106",
       appId: "1:904226782106:web:0190958c1a93ed677f9823"
     };
-
     firebase.initializeApp(firebaseConfig);
-    const db = firebase.database().ref("tempat_wisata/pantai_batakan");
 
-    db.once("value").then(snapshot => {
-      const data = snapshot.val() || { totalNilai: 0, jumlahPenilai: 0 };
-      const rata2 = data.jumlahPenilai === 0 ? 0 : (data.totalNilai / data.jumlahPenilai);
-      const rata2fix = rata2.toFixed(1);
+    function tampilkanRating(id) {
+      const db = firebase.database().ref("tempat_wisata/" + id);
+      db.once("value").then(snapshot => {
+        const data = snapshot.val() || { totalNilai: 0, jumlahPenilai: 0 };
+        const rata2 = data.jumlahPenilai === 0 ? 0 : (data.totalNilai / data.jumlahPenilai);
+        const rata2fix = rata2.toFixed(2);
 
-      document.getElementById("nilai-rating").innerText = rata2fix;
+        const infoRating = document.getElementById("info-rating");
+        const bintangEls = document.querySelectorAll("#bintang-container .bintang");
 
-      const bintangContainer = document.getElementById("bintang-container");
-      bintangContainer.innerHTML = "";
-      for (let i = 1; i <= 5; i++) {
-        const span = document.createElement("span");
-        span.className = "bintang" + (i <= Math.round(rata2) ? " aktif" : "");
-        span.innerText = "★";
-        bintangContainer.appendChild(span);
-      }
+        if (infoRating) {
+          infoRating.innerText = `Rating: ${rata2fix} dari ${data.jumlahPenilai} penilai`;
+        }
 
-      document.getElementById("jumlah-penilai").innerText = `(${data.jumlahPenilai})`;
-    });
+        bintangEls.forEach(el => {
+          const nilai = parseInt(el.dataset.nilai);
+          if (nilai <= Math.floor(rata2)) {
+            el.classList.add("aktif");
+          }
+        });
+      });
+    }
   </script>
-
 </body>
-
 </html>

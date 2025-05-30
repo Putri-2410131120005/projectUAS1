@@ -63,30 +63,35 @@
     </div>
 
     <!-- Footer -->
-    <footer class="text-center p-5" style="background-color: #3b5998; color: white">
-      <div class="container-fluid">
-        <div class="row">
+    <footer class="text-light pt-5 pb-3" style="background-color: #3b5998;">
+      <div class="container">
+        <div class="row gy-4">
           <div class="col-md-4">
-            <h5>Jelajah Banua</h5>
-            <p>Portal Wisata Digital Kalimantan Selatan</p>
+            <h3 class="text-warning fs-5 mb-2">Jelajah Banua</h3>
+            <p class="mb-0">Portal Wisata Digital Kalimantan Selatan</p>
           </div>
           <div class="col-md-4">
-            <h5>Navigasi</h5>
+            <h3 class="text-warning fs-5 mb-2">Navigasi</h3>
             <ul class="list-unstyled">
-              <li><a href="#" class="text-white">Beranda</a></li>
-              <li><a href="#" class="text-white">Wisata</a></li>
-              <li><a href="#" class="text-white">Tour Guide</a></li>
-              <li><a href="#" class="text-white">Tentang Kami</a></li>
-              <li><a href="#" class="text-white">Hubungi Kami</a></li>
+              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Beranda</a></li>
+              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Destinasi Wisata</a></li>
+              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Tour Guide</a></li>
+              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Tentang Kami</a></li>
+              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Hubungi Kami</a></li>
             </ul>
           </div>
           <div class="col-md-4">
-            <h5>Kontak</h5>
-            <p>Email: info@jelajahbanua.com<br>Telepon: +62 815 2916 2914</p>
+            <h3 class="text-warning fs-5 mb-2">Kontak</h3>
+            <p class="mb-1">Email: info@jelajahbanua.com</p>
+            <p class="mb-2">Telepon: +62 815 2151 9244</p>
           </div>
         </div>
-        <hr>
-        <p class="mb-0">&copy; 2025 Jelajah Banua. All rights reserved | Kebijakan Privasi | Syarat & Ketentuan</p>
+
+        <div class="text-center border-top border-secondary pt-3 mt-4 text-light small">
+          © 2025 Jelajah Banua. All right reserved. |
+          <a href="#" class="text-decoration-none text-light">Kebijakan Privasi</a> |
+          <a href="#" class="text-decoration-none text-light">Syarat & Ketentuan</a>
+        </div>
       </div>
     </footer>
 
@@ -107,8 +112,8 @@
               <div class="card text-center">
                 <div class="card-body">
                   <h5 class="card-title">${tempat.nama}</h5>
-                  <img src="${tempat.gambar || '/z-Encanto.jpg'}" class="card-img-top p-3" alt="${tempat.nama}">
-                  <a href="detail-tempat.html?id=${id}" class="btn btn-detail">Lihat Detail</a>
+                  <img src="${tempat.tumbnail || '/z-Encanto.jpg'}" class="card-img-top p-3" alt="${tempat.nama}">
+                  <a href="detail1.html?id=${id}" class="btn btn-detail">Lihat Detail</a>
                 </div>
               </div>
             `
