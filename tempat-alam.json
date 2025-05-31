@@ -27,5 +27,20 @@
     "jam-operasional":"",
     "harga-tiket":"",
     "fasilitas":""
+  }, 
+
+   "angsana": {
+    "nama": "Pantai Angsana",
+    "lokasi": "Batakan, Kec. Panyipatan, Kab. Tanah Laut, Kalimantan Selatan",
+    "koordinat": [-4.1202, 114.5659],
+    "tumbnail":"z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ],
+    "jam-operasional":"",
+    "harga-tiket":"",
+    "fasilitas":""
   }
 }
