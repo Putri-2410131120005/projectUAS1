@@ -28,11 +28,11 @@
     "harga-tiket":"",
     "fasilitas":""
   }, 
-
-   "angsana": {
+  
+  "angsana": {
     "nama": "Pantai Angsana",
-    "lokasi": "Batakan, Kec. Panyipatan, Kab. Tanah Laut, Kalimantan Selatan",
-    "koordinat": [-4.1202, 114.5659],
+    "lokasi": "Angsana, Kec. Angsana, Kab. Tanah Bumbu, Kalimantan Selatan",
+    "koordinat": [-3.7087, 115.5874],
     "tumbnail":"z-Encanto.jpg",
     "gambar": [
       "z-Encanto.jpg",
@@ -42,5 +42,137 @@
     "jam-operasional":"",
     "harga-tiket":"",
     "fasilitas":""
+  }, 
+
+  "pagatan": {
+  "nama": "Pantai Pagatan",
+  "lokasi": "Pagatan, Kec. Kusan Hilir, Kab. Tanah Bumbu, Kalimantan Selatan",
+  "koordinat": [-3.6075, 115.9347], 
+  "tumbnail":"z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ],
+    "jam-operasional":"",
+    "harga-tiket":"",
+    "fasilitas":""
+  },
+
+  "gedambaan": {
+  "nama": "Pantai Gedambaan",
+  "lokasi": "Gedambaan, Kec. Pulau Laut Utara, Kab. Kotabaru, Kalimantan Selatan",
+  "koordinat": [-3.2822389, 116.2581694],
+  "tumbnail":"z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ],
+    "jam-operasional":"",
+    "harga-tiket":"",
+    "fasilitas":""
+  }, 
+
+  "asmara": {
+  "nama": "Pantai Asmara",
+  "lokasi": "Muara Asam-Asam, Kec. Jorong, Kab. Tanah Laut, Kalimantan Selatan",
+  "koordinat": [-3.8544, 114.8361], 
+  "tumbnail":"z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ],
+    "jam-operasional":"",
+    "harga-tiket":"",
+    "fasilitas":""
+  }, 
+
+  "turki": {
+  "nama": "Pantai Turki",
+  "lokasi": "Dusun Tungkaran Naik, Desa Swarangan, Kec. Jorong, Kab. Tanah Laut, Kalimantan Selatan",
+  "koordinat": [-3.8511, 114.8327], 
+  "tumbnail":"z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ],
+    "jam-operasional":"",
+    "harga-tiket":"",
+    "fasilitas":""
+  }, 
+
+  "swarangan": {
+  "nama": "Pantai Swarangan",
+  "lokasi": "Swarangan, Kec. Jorong, Kab. Tanah Laut, Kalimantan Selatan",
+  "koordinat": [-4.0517, 114.9336], 
+  "tumbnail":"z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ],
+    "jam-operasional":"",
+    "harga-tiket":"",
+    "fasilitas":""
+  }, 
+
+  "teluk_tamiang": {
+  "nama": "Pantai Teluk Tamiang",
+  "lokasi": "Teluk Tamiang, Kec. Pulau Laut Tanjung Selayar, Kab. Kotabaru, Kalimantan Selatan",
+  "koordinat": [-3.3533, 116.1732], 
+  "tumbnail":"z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ],
+    "jam-operasional":"",
+    "harga-tiket":"",
+    "fasilitas":""
+  }, 
+
+  "samber_gelap": {
+  "nama": "Pantai Samber Gelap",
+  "lokasi": "Pulau Samber Gelap, Kec. Pulau Sebuku, Kab. Kotabaru, Kalimantan Selatan",
+  "koordinat": [-3.6586, 116.6042], 
+  "tumbnail":"z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ],
+    "jam-operasional":"",
+    "harga-tiket":"",
+    "fasilitas":""
+  }, 
+
+  "tanjung_dewa": {
+  "nama": "Pantai Tanjung Dewa",
+  "lokasi": "Tanjung Dewa, Kec. Panyipatan, Kab. Tanah Laut, Kalimantan Selatan",
+  "koordinat": [-4.1247, 114.5678], 
+  "tumbnail":"z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ],
+    "jam-operasional":"",
+    "harga-tiket":"",
+    "fasilitas":""
   }
+
+
+
+
+
+
+
+
+
+
+
+
 }
