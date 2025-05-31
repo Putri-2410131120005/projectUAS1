@@ -170,6 +170,28 @@
         </div>
       `;
 
+      function tampilkanRating(id) {
+      const db = firebase.database().ref("tempat_wisata/" + id);
+      db.once("value").then(snapshot => {
+        const data = snapshot.val() || { totalNilai: 0, jumlahPenilai: 0 };
+        const rata2 = data.jumlahPenilai === 0 ? 0 : (data.totalNilai / data.jumlahPenilai);
+        const rata2fix = rata2.toFixed(2);
+
+        const infoRating = document.getElementById("info-rating");
+        const bintangEls = document.querySelectorAll("#bintang-container .bintang");
+
+        if (infoRating) {
+          infoRating.innerText = `Rating: ${rata2fix} dari ${data.jumlahPenilai} penilai`;
+        }
+
+        bintangEls.forEach(el => {
+          const nilai = parseInt(el.dataset.nilai);
+          if (nilai <= Math.floor(rata2)) {
+            el.classList.add("aktif");
+          }
+        });
+      });
+    }
       // Inisialisasi Firebase rating setelah data tempat ditampilkan
       tampilkanRating(id);
     })
@@ -196,28 +218,6 @@
     };
     firebase.initializeApp(firebaseConfig);
 
-    function tampilkanRating(id) {
-      const db = firebase.database().ref("tempat_wisata/" + id);
-      db.once("value").then(snapshot => {
-        const data = snapshot.val() || { totalNilai: 0, jumlahPenilai: 0 };
-        const rata2 = data.jumlahPenilai === 0 ? 0 : (data.totalNilai / data.jumlahPenilai);
-        const rata2fix = rata2.toFixed(2);
-
-        const infoRating = document.getElementById("info-rating");
-        const bintangEls = document.querySelectorAll("#bintang-container .bintang");
-
-        if (infoRating) {
-          infoRating.innerText = `Rating: ${rata2fix} dari ${data.jumlahPenilai} penilai`;
-        }
-
-        bintangEls.forEach(el => {
-          const nilai = parseInt(el.dataset.nilai);
-          if (nilai <= Math.floor(rata2)) {
-            el.classList.add("aktif");
-          }
-        });
-      });
-    }
   </script>
 </body>
 </html>

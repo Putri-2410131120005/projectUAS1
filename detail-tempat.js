@@ -12,27 +12,26 @@ Promise.all([
   fetch("tempat-kuliner.json").then(res => res.json()),
   fetch("tempat-pertualangan.json").then(res => res.json())
 ])
-  .then(([alam, religi, edukasi, buatan, budayaSejarah, kuliner, pertualangan]) => {
+.then(([alam, religi, edukasi, buatan, budayaSejarah, kuliner, pertualangan]) => {
   const semuaTempat = { ...alam, ...religi, ...edukasi, ...buatan, ...budayaSejarah, ...kuliner, ...pertualangan };
 
-    const data = semuaTempat[tempatId];
-    if (!data) {
-      alert("Tempat tidak ditemukan!");
-      window.location.href = "index.html";
-      return;
-    }
+  const data = semuaTempat[tempatId];
+  if (!data) {
+    alert("Tempat tidak ditemukan!");
+    window.location.href = "index.html";
+    return;
+  }
 
-    document.getElementById("nama-tempat").textContent = data.nama;
-    document.getElementById("lokasi-tempat").innerHTML =
-      "<strong>Location:</strong><br>" + data.lokasi;
+  document.getElementById("nama-tempat").textContent = data.nama;
+  document.getElementById("lokasi-tempat").innerHTML =
+    "<strong>Location:</strong><br>" + data.lokasi;
 
-    setupMap(data);
-    initKomentar(tempatId);
-  })
-  .catch((err) => {
-    console.error("Gagal memuat data tempat:", err);
-  });
-
+  setupMap(data);
+  initKomentar(tempatId);
+})
+.catch((err) => {
+  console.error("Gagal memuat data tempat:", err);
+});
 
 // PETA & RUTE
 function setupMap(data) {
@@ -97,8 +96,7 @@ async function getCoordinates(place) {
   return null;
 }
 
-
-// KOMENTAR: Firebase
+// Firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
 import {
   getDatabase,
@@ -106,6 +104,13 @@ import {
   push,
   onValue
 } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut
+} from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBzwYLQ-_EI7LxDvAcgZfRHScZ1cn9dKss",
@@ -120,29 +125,42 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
+const auth = getAuth(app);
 
 function initKomentar(id) {
   const komentarInput = document.getElementById("komentar");
   const daftarKomentar = document.getElementById("daftarKomentar");
   const kirimBtn = document.getElementById("kirimKomentar");
+  const status = document.getElementById("statusLogin");
 
-  daftarKomentar.innerHTML = "<p>Belum ada komentar.</p>";
   const komentarRef = ref(database, "komentar/" + id);
+  daftarKomentar.innerHTML = "<p>Belum ada komentar.</p>";
 
-  kirimBtn.onclick = null;
-  kirimBtn.addEventListener("click", () => {
-    const isiKomentar = komentarInput.value.trim();
-    if (isiKomentar !== "") {
-      push(komentarRef, {
-        isi: isiKomentar,
-        timestamp: Date.now(),
-      }).catch((error) => {
-        console.error("Gagal menulis ke Firebase:", error);
-      });
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      status.textContent = "Login sebagai: " + (user.email || user.uid);
 
-      komentarInput.value = "";
+      kirimBtn.disabled = false;
+      kirimBtn.onclick = () => {
+        const isiKomentar = komentarInput.value.trim();
+        if (isiKomentar !== "") {
+          push(komentarRef, {
+            isi: isiKomentar,
+            uid: user.uid,
+            email: user.email || "Tidak diketahui",
+            timestamp: Date.now(),
+          }).catch((error) => {
+            console.error("Gagal menulis ke Firebase:", error);
+          });
+
+          komentarInput.value = "";
+        } else {
+          alert("Komentar tidak boleh kosong!");
+        }
+      };
     } else {
-      alert("Komentar tidak boleh kosong!");
+      status.textContent = "Silakan login untuk memberi komentar.";
+      kirimBtn.disabled = true;
     }
   });
 
@@ -153,7 +171,7 @@ function initKomentar(id) {
     if (data) {
       Object.values(data).forEach((item) => {
         const p = document.createElement("p");
-        p.textContent = item.isi;
+        p.innerHTML = `<strong>${item.email || "Anonim"}:</strong> ${item.isi}`;
         daftarKomentar.appendChild(p);
       });
     } else {
@@ -161,3 +179,24 @@ function initKomentar(id) {
     }
   });
 }
+
+// Login/Register/Logout
+document.getElementById("btnLogin").onclick = () => {
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value;
+  signInWithEmailAndPassword(auth, email, password)
+    .then(() => alert("Login berhasil"))
+    .catch((err) => alert("Gagal login: " + err.message));
+};
+
+document.getElementById("btnRegister").onclick = () => {
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value;
+  createUserWithEmailAndPassword(auth, email, password)
+    .then(() => alert("Pendaftaran berhasil"))
+    .catch((err) => alert("Gagal daftar: " + err.message));
+};
+
+document.getElementById("btnLogout").onclick = () => {
+  signOut(auth).then(() => alert("Logout berhasil"));
+};
