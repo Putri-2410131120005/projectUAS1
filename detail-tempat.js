@@ -27,7 +27,6 @@ Promise.all([
     "<strong>Location:</strong><br>" + data.lokasi;
 
   setupMap(data);
-  initKomentar(tempatId);
 })
 .catch((err) => {
   console.error("Gagal memuat data tempat:", err);
@@ -96,107 +95,163 @@ async function getCoordinates(place) {
   return null;
 }
 
-// Firebase
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
-import {
-  getDatabase,
-  ref,
-  push,
-  onValue
-} from "https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js";
-import {
-  getAuth,
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  onAuthStateChanged,
-  signOut
-} from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+window.onload = function () {
+  const firebaseConfig = {
+    apiKey: "AIzaSyBK1vKLs1KdsAfgex8uue77T8BH98p6tRY",
+    authDomain: "percobaanrating.firebaseapp.com",
+    databaseURL: "https://percobaanrating-default-rtdb.firebaseio.com",
+    projectId: "percobaanrating",
+    storageBucket: "percobaanrating.appspot.com",
+    messagingSenderId: "904226782106",
+    appId: "1:904226782106:web:0190958c1a93ed677f9823"
+  };
 
-const firebaseConfig = {
-  apiKey: "AIzaSyBzwYLQ-_EI7LxDvAcgZfRHScZ1cn9dKss",
-  authDomain: "komentar-proyekakhir.firebaseapp.com",
-  projectId: "komentar-proyekakhir",
-  storageBucket: "komentar-proyekakhir.appspot.com",
-  messagingSenderId: "599737755520",
-  appId: "1:599737755520:web:c1456857fbb23609dd4365",
-  measurementId: "G-S6PF3RXN1J",
-  databaseURL: "https://komentar-proyekakhir-default-rtdb.firebaseio.com",
-};
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+  const database = firebase.database();
+  const namaWisata = tempatId;
+  let nilaiTerpilih = 0;
+  let penggunaSaatIni = null;
 
-const app = initializeApp(firebaseConfig);
-const database = getDatabase(app);
-const auth = getAuth(app);
+  function tandaiBintang(nilai) {
+    document.querySelectorAll(".bintang").forEach(el => {
+      el.classList.toggle("hovered", parseInt(el.dataset.nilai) <= nilai);
+      el.classList.toggle("aktif", parseInt(el.dataset.nilai) <= nilai);
+    });
+  }
 
-function initKomentar(id) {
-  const komentarInput = document.getElementById("komentar");
-  const daftarKomentar = document.getElementById("daftarKomentar");
-  const kirimBtn = document.getElementById("kirimKomentar");
-  const status = document.getElementById("statusLogin");
+  function isValidEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
 
-  const komentarRef = ref(database, "komentar/" + id);
-  daftarKomentar.innerHTML = "<p>Belum ada komentar.</p>";
+  document.getElementById("btnRegister").addEventListener("click", () => {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    if (!isValidEmail(email)) return alert("Email tidak valid!");
+    auth.createUserWithEmailAndPassword(email, password)
+      .catch(err => alert("Registrasi gagal:"));
+  });
 
-  onAuthStateChanged(auth, (user) => {
+  document.getElementById("btnLogin").addEventListener("click", () => {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    auth.signInWithEmailAndPassword(email, password)
+      .then(() => alert("Login berhasil!"))
+      .catch(err => alert("Login gagal"));
+  });
+
+  document.getElementById("btnLogout").addEventListener("click", () => {
+    auth.signOut().then(() => alert("Logout berhasil!"));
+  });
+
+  auth.onAuthStateChanged(user => {
+    penggunaSaatIni = user;
+    const statusLogin = document.getElementById("statusLogin");
+    const btnLogout = document.getElementById("btnLogout");
+
     if (user) {
-      status.textContent = "Login sebagai: " + (user.email || user.uid);
+      statusLogin.innerText = `Login sebagai: ${user.email}`;
+      btnLogout.classList.remove("d-none");
+      tampilkanKomentar();
+    } else {
+      statusLogin.innerText = "Silakan login untuk memberi komentar dan rating.";
+      btnLogout.classList.add("d-none");
+    }
+  });
 
-      kirimBtn.disabled = false;
-      kirimBtn.onclick = () => {
-        const isiKomentar = komentarInput.value.trim();
-        if (isiKomentar !== "") {
-          push(komentarRef, {
-            isi: isiKomentar,
-            uid: user.uid,
-            email: user.email || "Tidak diketahui",
-            timestamp: Date.now(),
-          }).catch((error) => {
-            console.error("Gagal menulis ke Firebase:", error);
-          });
+  if (namaWisata) {
+    const db = database.ref("tempat_wisata/" + namaWisata);
 
-          komentarInput.value = "";
-        } else {
-          alert("Komentar tidak boleh kosong!");
+    document.querySelectorAll(".bintang").forEach(b => {
+      b.addEventListener("click", () => {
+        const user = penggunaSaatIni;
+        if (!user) {
+          alert("Silakan login untuk memberi rating.");
+          return;
         }
-      };
-    } else {
-      status.textContent = "Silakan login untuk memberi komentar.";
-      kirimBtn.disabled = true;
-    }
-  });
 
-  onValue(komentarRef, (snapshot) => {
-    const data = snapshot.val();
-    daftarKomentar.innerHTML = "";
+        const uid = user.uid;
+        const nilai = parseInt(b.dataset.nilai);
+        nilaiTerpilih = nilai;
 
-    if (data) {
-      Object.values(data).forEach((item) => {
-        const p = document.createElement("p");
-        p.innerHTML = `<strong>${item.email || "Anonim"}:</strong> ${item.isi}`;
-        daftarKomentar.appendChild(p);
+        db.child("ratings").child(uid).once("value", snapshot => {
+          if (snapshot.exists()) {
+            alert("Anda sudah memberi rating untuk tempat ini.");
+            return;
+          }
+
+          db.once("value").then(snapshot => {
+            const data = snapshot.val() || {};
+            const totalNilai = (data.totalNilai || 0) + nilai;
+            const jumlahPenilai = (data.jumlahPenilai || 0) + 1;
+
+            db.update({
+              totalNilai: totalNilai,
+              jumlahPenilai: jumlahPenilai
+            });
+
+            db.child("ratings").child(uid).set(nilai);
+            document.getElementById("info").innerText = `Terima kasih! Rating Anda: ${nilai}`;
+            tandaiBintang(nilai);
+          });
+        });
       });
-    } else {
-      daftarKomentar.innerHTML = "<p>Belum ada komentar.</p>";
+
+      b.addEventListener("mouseover", () => {
+        tandaiBintang(parseInt(b.dataset.nilai));
+      });
+
+      b.addEventListener("mouseout", () => {
+        tandaiBintang(nilaiTerpilih);
+      });
+    });
+
+    db.once("value").then(snapshot => {
+      const data = snapshot.val() || {};
+      const rata2 = data.jumlahPenilai === 0 ? 0 : (data.totalNilai / data.jumlahPenilai);
+      document.getElementById("info").innerText = `Rating: ${rata2.toFixed(2)} dari ${data.jumlahPenilai || 0} penilai`;
+      tandaiBintang(Math.floor(rata2));
+    });
+
+    const daftarKomentar = document.getElementById("daftarKomentar");
+    const komentarInput = document.getElementById("komentar");
+
+    document.getElementById("kirimKomentar").addEventListener("click", () => {
+      const user = penggunaSaatIni;
+      const komentar = komentarInput.value.trim();
+
+      if (!user) return alert("Anda harus login untuk mengirim komentar.");
+      if (!komentar) return alert("Komentar tidak boleh kosong.");
+
+      const komentarRef = db.child("komentar").push();
+      komentarRef.set({
+        email: user.email,
+        isi: komentar,
+        waktu: new Date().toISOString()
+      }).then(() => {
+        komentarInput.value = "";
+        tampilkanKomentar();
+      }).catch(err => {
+        alert("Gagal mengirim komentar: " + err.message);
+      });
+    });
+
+    function tampilkanKomentar() {
+      db.child("komentar").once("value").then(snapshot => {
+        const data = snapshot.val();
+        if (!data) {
+          daftarKomentar.innerHTML = "Belum ada komentar.";
+          return;
+        }
+
+        const komentarHTML = Object.values(data).reverse().map(item => `
+          <p><strong>${item.email}</strong><br>${item.isi}</p>
+        `).join("");
+
+        daftarKomentar.innerHTML = komentarHTML;
+      });
     }
-  });
-}
 
-// Login/Register/Logout
-document.getElementById("btnLogin").onclick = () => {
-  const email = document.getElementById("email").value.trim();
-  const password = document.getElementById("password").value;
-  signInWithEmailAndPassword(auth, email, password)
-    .then(() => alert("Login berhasil"))
-    .catch((err) => alert("Gagal login: " + err.message));
-};
-
-document.getElementById("btnRegister").onclick = () => {
-  const email = document.getElementById("email").value.trim();
-  const password = document.getElementById("password").value;
-  createUserWithEmailAndPassword(auth, email, password)
-    .then(() => alert("Pendaftaran berhasil"))
-    .catch((err) => alert("Gagal daftar: " + err.message));
-};
-
-document.getElementById("btnLogout").onclick = () => {
-  signOut(auth).then(() => alert("Logout berhasil"));
+    tampilkanKomentar();
+  }
 };
