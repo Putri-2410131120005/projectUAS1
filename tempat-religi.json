@@ -1,1 +1,19 @@
-{}
+{
+    "takisung": {
+        "nama": "Pantai Takisung",
+        "lokasi": "Desa Takisung, Kecamatan Takisung, Kabupaten Tanah Laut, Kalimantan Selatan",
+        "koordinat": [-3.86719,114.60809],
+        "tumbnail": "z-Encanto.jpg",
+        "gambar": [
+            "z-Encanto.jpg",
+            "z-Encanto.jpg",
+            "z-Encanto.jpg"
+        ],
+        "deskripsi": "Pantai Takisung menawarkan panorama laut yang menenangkan dengan pasir yang luas dan ombak yang ramah untuk bermain air. Berlokasi di Tanah Laut, Kalimantan Selatan, pantai ini cocok untuk liburan keluarga atau sekadar melepas penat dari hiruk-pikuk kota. Fasilitas lengkap dan penataan yang rapi membuat pengunjung betah berlama-lama. Keindahan alam dan suasana teduh dari deretan pohon nyiur jadi daya tarik utamanya!",
+        "jam-operasional": "24 jam",
+        "harga-tiket": {
+            "weekdays": "Rp5.000  (belum termasuk fasilitas tambahan)",
+            "weekend": "Rp10.000  (belum termasuk fasilitas tambahan)"
+        }
+    }
+}
