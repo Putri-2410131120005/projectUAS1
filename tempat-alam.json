@@ -5,9 +5,10 @@
     "koordinat": [-3.86719, 114.60809],
     "tumbnail": "z-Encanto.jpg",
     "gambar": [
-      "z-Encanto.jpg",
-      "z-Encanto.jpg",
-      "z-Encanto.jpg"
+      "/wisata alam/pantai tangkisung/pantai tangkisung 1.jpg",
+      "/wisata alam/pantai tangkisung/pantai tangkisung 2.png",
+      "/wisata alam/pantai tangkisung/pantai tangkisung 3.jpg",
+      "/wisata alam/pantai tangkisung/pantai tangkisung 5.jpg"
     ],
     "deskripsi":"Pantai Takisung menawarkan panorama laut yang menenangkan dengan pasir yang luas dan ombak yang ramah untuk bermain air. Berlokasi di Tanah Laut, Kalimantan Selatan, pantai ini cocok untuk liburan keluarga atau sekadar melepas penat dari hiruk-pikuk kota. Fasilitas lengkap dan penataan yang rapi membuat pengunjung betah berlama-lama. Keindahan alam dan suasana teduh dari deretan pohon nyiur jadi daya tarik utamanya!",
     "jam-operasional": "24 jam",
@@ -39,7 +40,9 @@
     ],
     "deskripsi":"Pantai Batakan terletak di Desa Batakan, Tanah Laut, Kalimantan Selatan. Pantai ini menawarkan pemandangan laut yang memesona dengan deretan pohon cemara di sepanjang garis pantainya. Selain keindahan alamnya, pengunjung juga bisa menikmati aktivitas seru seperti naik kuda, bermain ATV, atau menyewa banana boat. Letaknya yang tidak terlalu jauh dari kota menjadikan pantai ini destinasi favorit untuk liburan santai bersama keluarga. Di dekat pantai juga terdapat Pulau Datu, yang dikenal sebagai tempat wisata religi.",
     "jam-operasional": "24 jam",
-    "harga-tiket":"Rp20.000  (belum termasuk fasilitas tambahan)",
+    "harga-tiket": {
+      "weekdays-weekend": "Rp20.000  (belum termasuk fasilitas tambahan)"
+    },
     "fasilitas": [
       "Tempat parkir luas",
       "Mushola",
