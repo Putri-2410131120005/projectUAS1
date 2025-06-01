@@ -154,8 +154,13 @@
             </div>
             <h3>${tempat.nama}</h3>
             <p>${tempat.lokasi}</p>
-            <p><strong>Deskripsi Wisata:</strong> <br>${tempat["deskripsi"] || "Informasi tidak tersedia"}</p>
-            <p><strong>Jam Operasional:</strong> ${tempat["jam-operasional"] || "Informasi tidak tersedia"}</p>
+            <div>
+              <strong>Deskripsi Wisata:<br></strong>
+              <div style="max-height: 150px; overflow-y: auto; border: 1px solid #ccc; padding: 10px; border-radius: 5px; background-color: white;">
+                ${tempat["deskripsi"] || "Informasi tidak tersedia"}
+              </div>
+            </div>
+            <p><strong><br>Jam Operasional:</strong> ${tempat["jam-operasional"] || "Informasi tidak tersedia"}</p>
             <div><strong>Harga Tiket:</strong><ul>${tiket}</ul></div>
             <div><strong>Fasilitas:</strong><ul>${fasilitas}</ul></div>
 
