@@ -1,46 +1,58 @@
 {
-  "tangkisung": {
-    "nama": "Pantai Tangkisung",
-    "lokasi": "Tangkisung, Kabupaten Kotabaru, Kalimantan Selatan",
-    "koordinat": [-3.8415,115.2550],
+  "takisung": {
+    "nama": "Pantai Takisung",
+    "lokasi": "Desa Takisung, Kecamatan Takisung, Kabupaten Tanah Laut, Kalimantan Selatan",
+    "koordinat": [-3.86719, 114.60809],
     "tumbnail": "z-Encanto.jpg",
     "gambar": [
       "z-Encanto.jpg",
       "z-Encanto.jpg",
       "z-Encanto.jpg"
     ],
-    "deskripsi":"lunaluna",
-    "jam-operasional": "",
+    "deskripsi":"Pantai Takisung menawarkan panorama laut yang menenangkan dengan pasir yang luas dan ombak yang ramah untuk bermain air. Berlokasi di Tanah Laut, Kalimantan Selatan, pantai ini cocok untuk liburan keluarga atau sekadar melepas penat dari hiruk-pikuk kota. Fasilitas lengkap dan penataan yang rapi membuat pengunjung betah berlama-lama. Keindahan alam dan suasana teduh dari deretan pohon nyiur jadi daya tarik utamanya!",
+    "jam-operasional": "24 jam",
     "harga-tiket": {
-      "weekdays": "Rp5.000",
-      "weekend": "Rp10.000"
+      "weekdays": "Rp5.000  (belum termasuk fasilitas tambahan)",
+      "weekend": "Rp10.000  (belum termasuk fasilitas tambahan)"
     },
     "fasilitas": [
       "Area parkir",
       "Toilet",
       "Warung makan dan minum",
-      "Penyewaan Tenda dan Payung",
+      "Penyewaan Tenda",
+      "Penyewaan Payung",
       "Penyewaan Perahu karet",
       "Penyewaan Banana Boat",
       "Penyewaan Motor ATV",
       "Tempat bilas"
     ]
-
   },
   "batakan": {
     "nama": "Pantai Batakan",
     "lokasi": "Batakan, Kec. Panyipatan, Kab. Tanah Laut, Kalimantan Selatan",
-    "koordinat": [-4.1202,114.5659],
+    "koordinat": [-4.097, 114.629],
     "tumbnail": "z-Encanto.jpg",
     "gambar": [
       "z-Encanto.jpg",
       "z-Encanto.jpg",
       "z-Encanto.jpg"
     ],
-    "deskripsi": "lunaluna",
-    "jam-operasional": "",
-    "harga-tiket": "",
-    "fasilitas": ""
+    "deskripsi":"Pantai Batakan terletak di Desa Batakan, Tanah Laut, Kalimantan Selatan. Pantai ini menawarkan pemandangan laut yang memesona dengan deretan pohon cemara di sepanjang garis pantainya. Selain keindahan alamnya, pengunjung juga bisa menikmati aktivitas seru seperti naik kuda, bermain ATV, atau menyewa banana boat. Letaknya yang tidak terlalu jauh dari kota menjadikan pantai ini destinasi favorit untuk liburan santai bersama keluarga. Di dekat pantai juga terdapat Pulau Datu, yang dikenal sebagai tempat wisata religi.",
+    "jam-operasional": "24 jam",
+    "harga-tiket":"Rp20.000  (belum termasuk fasilitas tambahan)",
+    "fasilitas": [
+      "Tempat parkir luas",
+      "Mushola",
+      "Toilet ",
+      "Warung makan dan minum",
+      "Penyewaan Kuda",
+      "Penyewaan Gazebo",
+      "Penyewaan Ban Pelampung",
+      "Penyewaan Perahu",
+      "Tempat bilas", 
+      "Playground", 
+      "Penginapan"
+    ]
   },
   "angsana": {
     "nama": "Pantai Angsana",
@@ -52,10 +64,30 @@
       "z-Encanto.jpg",
       "z-Encanto.jpg"
     ],
-    "deskripsi": "lunaluna",
-    "jam-operasional": "",
-    "harga-tiket": "",
-    "fasilitas": ""
+    "deskripsi":"Pantai Angsana terletak di Kabupaten Tanah Bumbu, Kalimantan Selatan, dan dikenal sebagai salah satu surga tersembunyi dengan panorama laut yang memukau. Air lautnya jernih dengan gradasi warna biru yang indah, cocok untuk snorkeling dan diving karena terumbu karangnya masih alami. Pengunjung juga bisa menikmati sensasi naik banana boat atau bersantai di tepi pantai sambil menikmati semilir angin. Dengan suasana yang tenang dan alami, Pantai Angsana menjadi tempat sempurna untuk melepas penat dan menikmati keindahan alam tropis.",
+    "jam-operasional": "24 jam",
+    "harga-tiket": {
+      "keterangan": "Gratis (pengunjung hanya dikenakan biaya parkir)",
+      "parkir": {
+        "mobil": "Rp15.000 (belum termasuk fasilitas tambahan)",
+        "motor": "Rp10.000 (belum termasuk fasilitas tambahan)"
+      }
+    },
+    "fasilitas": [
+      "Tempat parkir",
+      "Mushola",
+      "Toilet ",
+      "Warung makan dan minum",
+      "Penyewaan alat snorkling",
+      "Penyewaan alat diving",
+      "Penyewaan alat scuba diving",
+      "Penyewaan Ban Pelampung",
+      "Penyewaan wahana Banana Boat",
+      "Penyewaan ATV",
+      "Penyewaan Jetski",
+      "Tempat bilas", 
+      "Penginapan"
+    ]
   },
   "pagatan": {
     "nama": "Pantai Pagatan",
@@ -67,9 +99,16 @@
       "z-Encanto.jpg",
       "z-Encanto.jpg"
     ],
-    "jam-operasional": "",
-    "harga-tiket": "",
-    "fasilitas": ""
+    "deskripsi":"Pantai Pagatan terletak di Kabupaten Tanah Bumbu, Kalimantan Selatan, dan merupakan salah satu destinasi wisata favorit masyarakat lokal. Pantai ini memiliki pasir putih yang lembut serta ombak yang tenang, cocok untuk bersantai bersama keluarga. Setiap tahun, pantai ini juga menjadi pusat kegiatan budaya Mappanretasi, yaitu tradisi masyarakat Bugis-Makassar sebagai bentuk rasa syukur kepada Tuhan atas hasil laut. Keindahan alam dan nilai budaya yang kuat menjadikan Pantai Pagatan tempat yang sayang untuk dilewatkan saat berlibur ke Kalimantan Selatan.",
+    "jam-operasional": "24 Jam",
+    "harga-tiket": "Gratis (belum termasuk fasilitas tambahan)",
+    "fasilitas": [
+      "Tempat parki",
+      "Mushola",
+      "Toilet ",
+      "Warung makan dan minum",
+      "Tempat bilas"
+    ]
   },
   "gedambaan": {
     "nama": "Pantai Gedambaan",
@@ -81,9 +120,23 @@
       "z-Encanto.jpg",
       "z-Encanto.jpg"
     ],
-    "jam-operasional": "",
-    "harga-tiket": "",
-    "fasilitas": ""
+    "deskripsi":"Pantai Gedambaan, yang terletak di Kecamatan Pulau Laut Sigam, Kabupaten Kotabaru, Kalimantan Selatan, menyuguhkan panorama alam yang menawan dengan kombinasi laut biru dan perbukitan hijau di sekitarnya. Pantai ini dikenal memiliki suasana yang sejuk, ombak yang tenang, dan fasilitas wisata yang terus dikembangkan. Cocok untuk liburan keluarga, berkemah, ataupun sekadar menikmati sunset yang memukau. Suasana asri dan udara segar membuat pengunjung betah berlama-lama di pantai ini.",
+    "jam-operasional": "08.00 - 17.00 WITA",
+     "harga-tiket": {
+      "keterangan":"Biaya belum termasuk fasilitas",
+      "harga-1":"Rp10.000",
+      "harga-2":"Rp11.000 (termasuk biaya parkir)",
+      "harga-3":"Rp15.0000 (sudah termasuk asuransi)"
+    },
+    "fasilitas": [
+      "Area parkir yang luas",
+      "Gazebo gratis",
+      "Toilet dan tempat bilas",
+      "Warung makan dan restoran",
+      "Area bermain anak-anak", 
+      "Cottage atau penginapan",
+      "Panggung pentas seni"
+    ]
   },
   "asmara": {
     "nama": "Pantai Asmara",
@@ -95,9 +148,28 @@
       "z-Encanto.jpg",
       "z-Encanto.jpg"
     ],
-    "jam-operasional": "",
-    "harga-tiket": "",
-    "fasilitas": ""
+    "deskripsi":"Pantai Asmara, terletak di Desa Muara Asam-Asam, Kecamatan Jorong, Kabupaten Tanah Laut, Kalimantan Selatan, merupakan destinasi favorit yang menyuguhkan keindahan alam berpadu dengan suasana romantis. Pasir putih, air laut yang jernih, dan pohon-pohon rindang di sekitarnya menciptakan nuansa tenang dan nyaman. Nama Asmara sendiri mencerminkan suasana damai yang cocok untuk pasangan maupun keluarga. Tersedia berbagai fasilitas wisata seperti gazebo, warung makan, hingga spot foto menarik yang membuat liburan semakin menyenangkan.",
+    "jam-operasional": "24 Jam",
+    "harga-tiket":{
+      "masuk":"Rp10.000 (belum termasuk biaya fasilitas)",
+      "biaya-parkir":{
+        "mobil":"Rp10.000",
+        "motor":"Rp5.000" 
+      }
+    },
+    "fasilitas": [
+      "Area parkir yang luas",
+      "Gazebo untuk santai",
+      "Toilet dan kamar mandi",
+      "Warung makan dan minuman",
+      "Musholla",
+      "Dermaga kayu untuk berfoto", 
+      "Spot foto bertema LOVE dan ayunan pantai",
+      "Wahana Banana Boat dan ATV",
+      "Penyewaan Speed boat",
+      "Penyewaan motor trail", 
+      "Area Berkemmah"
+    ]
   },
   "turki": {
     "nama": "Pantai Turki",
@@ -109,51 +181,51 @@
       "z-Encanto.jpg",
       "z-Encanto.jpg"
     ],
+    "deskripsi":"Pantai Turki menyajikan pemandangan pantai yang indah dengan pasir putih, laut yang tenang, dan suasana asri. Meskipun belum sebesar pantai-pantai lainnya, keunikan namanya serta lokasi yang masih alami membuatnya menjadi destinasi wisata baru yang menarik di Kabupaten Banjar. Cocok untuk bersantai bersama keluarga atau sekadar melepas penat dari aktivitas harian.",
     "jam-operasional": "",
-    "harga-tiket": "",
-    "fasilitas": ""
-  },
-  "swarangan": {
-    "nama": "Pantai Swarangan",
-    "lokasi": "Swarangan, Kec. Jorong, Kab. Tanah Laut, Kalimantan Selatan",
-    "koordinat": [-4.0517,114.9336],
-    "tumbnail": "z-Encanto.jpg",
-    "gambar": [
-      "z-Encanto.jpg",
-      "z-Encanto.jpg",
-      "z-Encanto.jpg"
-    ],
-    "jam-operasional": "",
-    "harga-tiket": "",
-    "fasilitas": ""
+    "harga-tiket":{
+      "masuk":"Rp10.000 (belum termasuk biaya fasilitas)",
+      "biaya-parkir":{
+        "mobil":"Rp10.000",
+        "motor":"Rp5.000" 
+      }
+    },
+    "fasilitas": [
+      "Area parkir",
+      "Gazebo",
+      "Toilet dan kamar mandi",
+      "Warung makan dan minuman",
+      "Spot foto tepi pantai",
+      "Area Bermain anak"
+    ]
   },
   "teluk_tamiang": {
     "nama": "Pantai Teluk Tamiang",
     "lokasi": "Teluk Tamiang, Kec. Pulau Laut Tanjung Selayar, Kab. Kotabaru, Kalimantan Selatan",
     "koordinat": [-3.3533,116.1732],
-    "tumbnail": "pantaitamiang3.jpg",
-    "gambar": [
-      "pantaitamiang4.jpg",
-      "pantaitamiang5.jpg",
-      "pantaitamiang6.jpg"
-    ],
-    "jam-operasional": "",
-    "harga-tiket": "",
-    "fasilitas": ""
-  },
-  "samber_gelap": {
-    "nama": "Pantai Samber Gelap",
-    "lokasi": "Pulau Samber Gelap, Kec. Pulau Sebuku, Kab. Kotabaru, Kalimantan Selatan",
-    "koordinat": [-3.6586,116.6042],
     "tumbnail": "z-Encanto.jpg",
     "gambar": [
       "z-Encanto.jpg",
       "z-Encanto.jpg",
       "z-Encanto.jpg"
     ],
-    "jam-operasional": "",
-    "harga-tiket": "",
-    "fasilitas": ""
+    "deskripsi":"Pantai Teluk Tamiang menyajikan pesona alam memukau dengan pasir putih halus membentang sepanjang pesisir Kotabaru yang masih perawan. Air lautnya jernih kebiruan dengan ombak tenang, sempurna untuk berenang atau sekadar menikmati kesunyian pantai yang jauh dari keramaian. Deretan pohon kelapa alami memberikan bayangan teduh sementara karang-karang kecil di tepian menambah keindahan alam bawah lautnya. Saat senja, pantai ini berubah menjadi lukisan alam spektakuler dengan panorama matahari terbenam yang memantul di permukaan air. Cocok bagi pencari ketenangan yang ingin menyatu dengan alam tanpa gangguan modern, Teluk Tamiang menawarkan pengalaman pantai autentik khas Kalimantan Selatan yang sulit dilupakan. Jangan lupa bawa kamera untuk mengabadikan momen indah di surga tersembunyi ini!",
+    "jam-operasional": "24 Jam",
+    "harga-tiket":{
+      "masuk":"Rp10.000 (belum termasuk biaya fasilitas)",
+      "biaya-parkir":{
+        "mobil":"Rp10.000",
+        "motor":"Rp3.000" 
+      }
+    },
+    "fasilitas": [
+      "Area parkir untuk mobil dan motor",
+      "Toilet",
+      "Warung makan dan minuman",
+      "Musholla",
+      "Tempat sampah",
+      "Tempat penginapan"
+    ]
   },
   "tanjung_dewa": {
     "nama": "Pantai Tanjung Dewa",
@@ -165,9 +237,17 @@
       "z-Encanto.jpg",
       "z-Encanto.jpg"
     ],
-    "jam-operasional": "",
-    "harga-tiket": "",
-    "fasilitas": ""
+    "deskripsi":"Pantai Tanjung Dewa menawarkan keindahan alam memesona dengan hamparan pasir putih yang lembut dan air laut berwarna biru jernih. Suasana pantai yang masih asri dan tenang membuatnya cocok untuk bersantai menikmati deburan ombak atau sekadar duduk di bawah rindangnya pepohonan. Saat senja, pemandangan sunset yang memukau menjadi daya tarik utama dengan pantulan cahaya keemasan di permukaan air. Dengan fasilitas yang cukup lengkap namun tetap alami, pantai ini memberikan pengalaman liburan yang menyenangkan sambil menikmati keindahan alam Kalimantan Selatan yang masih terjaga.",
+    "jam-operasional": "09.00 - 18.00",
+    "harga-tiket": "Gratis (belum termasuk fasilitas tambahan)",
+    "fasilitas": [
+      "Area parkir",
+      "Toilet umum",
+      "Area bersantai gazebo & pondokan",
+      "Musholla",
+      "Spot foto menarik",
+      "Akses ke pulau kecil"
+    ]
   },
   "danau_biru_pengaron": {
     "nama": "Danau Biru Pengaron",
@@ -179,9 +259,24 @@
       "z-Encanto.jpg",
       "z-Encanto.jpg"
     ],
-    "jam-operasional": "",
-    "harga-tiket": "",
-    "fasilitas": ""
+    "deskripsi":"",
+    "jam-operasional": "24 Jam",
+    "harga-tiket":{
+      "masuk":"Rp10.000 (belum termasuk biaya fasilitas)",
+      "biaya-parkir":{
+        "mobil":"Rp10.000",
+        "motor":"Rp3.000" 
+      }
+    },
+    "fasilitas": [
+      "Area Parkir",
+      "Toilet dan Kamar Mandi",
+      "Musholla",
+      "Warung makan dan minum",
+      "Sewa Perahu",
+      "Spot foto menarik",
+      "Area Bersantai"
+    ]
   },
   "danau_seran": {
     "nama": "Danau Seran",
@@ -193,9 +288,18 @@
       "z-Encanto.jpg",
       "z-Encanto.jpg"
     ],
-    "jam-operasional": "",
-    "harga-tiket": "",
-    "fasilitas": ""
+    "deskripsi":"Danau Seran memukau dengan air biru kehijauannya yang jernih bak permata di tengah eksotisme alam Banjar. Tebing-tebing terjal mengelilingi danau bekas tambang ini, menciptakan kontras dramatis antara birunya air dengan cokelat kemerahan dinding tebing. Saat matahari bersinar, air danau berpendar dalam gradasi warna memesona dari biru muda hingga toska dalam, berubah-ubah seperti lukisan hidup yang tak pernah sama setiap waktunya. Suasana sekitar yang sunyi dan sejuk, hanya terdengar gemericik air dan desau angin melalui dedaunan, membuatnya menjadi tempat pelarian sempurna dari keramaian. Meski tak bisa untuk berenang, tepian danau yang landai tetap mengundang untuk duduk berlama-lama menikmati kedamaian sambil memandangi pantulan langit di permukaan air yang sebening kaca. Di musim kemarau, pesonanya kian sempurna saat warna air mencapai kejernihan puncak, menjadikan Danau Seran salah satu hidden gem paling fotogenik di Kalimantan Selatan.",
+    "jam-operasional": "08.00 - 18.00",
+    "harga-tiket": "Rp5.000 (belum termasuk biaya fasilitas) ",
+    "fasilitas": [
+      "Area Parkir",
+      "Toilet dan Kamar Mandi",
+      "Musholla",
+      "Warung makan dan minum",
+      "Sewa Perahu",
+      "Spot foto menarik",
+      "Area Bersantai"
+    ]
   }, 
   "danau_biru_tiung": {
   "nama": "Danau Biru Desa Tiung",
@@ -207,8 +311,22 @@
       "z-Encanto.jpg",
       "z-Encanto.jpg"
     ],
-    "jam-operasional": "",
-    "harga-tiket": "",
-    "fasilitas": ""
+    "deskripsi":"Danau Biru Desa Tiung menawarkan pemandangan alam yang memukau dengan air berwarna biru toska yang kontras dengan tebing-tebing terjal di sekitarnya. Bekas galian tambang yang telah berubah menjadi danau alami ini menciptakan panorama unik bak lukisan alam, terutama saat sinar matahari menyinari permukaan airnya yang jernih. Warna air yang berubah-ubah dari biru muda hingga toska tergantung intensitas cahaya menjadi daya tarik utama bagi pengunjung. Suasana sekitar yang tenang dan jauh dari keramaian membuat tempat ini cocok untuk bersantai sambil menikmati keindahan alam. Meski tidak diperuntukkan untuk berenang, tepian danau yang landai tetap mengundang untuk duduk berlama-lama menikmati pemandangan. Di musim kemarau, pesona Danau Biru Desa Tiung semakin sempurna saat warna air mencapai kejernihan optimal, menjadikannya salah satu hidden gem paling fotogenik di Kalimantan Selatan yang sayang untuk dilewatkan.",
+    "jam-operasional": "07.00 - 18.00",
+    "harga-tiket":{
+      "masuk":"Rp10.000 (belum termasuk biaya fasilitas)",
+      "biaya-parkir":{
+        "mobil":"Rp5.000",
+        "motor":"Rp3.000" 
+      }
+    },
+    "fasilitas": [
+      "Area Parkir",
+      "Toilet umum",
+      "Gazebo dan tempat duduk",
+      "Warung makan dan minum",
+      "Pemandangan indah",
+      "Spot foto instagramable"
+    ]
   }
 }
