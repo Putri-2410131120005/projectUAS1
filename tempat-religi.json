@@ -1,19 +1,160 @@
 {
-    "takisung": {
-        "nama": "Pantai Takisung",
-        "lokasi": "Desa Takisung, Kecamatan Takisung, Kabupaten Tanah Laut, Kalimantan Selatan",
-        "koordinat": [-3.86719,114.60809],
-        "tumbnail": "z-Encanto.jpg",
-        "gambar": [
-            "z-Encanto.jpg",
-            "z-Encanto.jpg",
-            "z-Encanto.jpg"
-        ],
-        "deskripsi": "Pantai Takisung menawarkan panorama laut yang menenangkan dengan pasir yang luas dan ombak yang ramah untuk bermain air. Berlokasi di Tanah Laut, Kalimantan Selatan, pantai ini cocok untuk liburan keluarga atau sekadar melepas penat dari hiruk-pikuk kota. Fasilitas lengkap dan penataan yang rapi membuat pengunjung betah berlama-lama. Keindahan alam dan suasana teduh dari deretan pohon nyiur jadi daya tarik utamanya!",
-        "jam-operasional": "24 jam",
-        "harga-tiket": {
-            "weekdays": "Rp5.000  (belum termasuk fasilitas tambahan)",
-            "weekend": "Rp10.000  (belum termasuk fasilitas tambahan)"
-        }
-    }
+    "masjid-sultan-suriansyah": {
+    "nama": "Masjid Sultan Suriansyah",
+    "lokasi": "Kelurahan Kuin Utara, Kecamatan Banjarmasin Utara, Kota Banjarmasin, Kalimantan Selatan",
+    "koordinat": [-3.28023, 114.56259],
+    "tumbnail": "/foto/wisata budaya dan sejarah/masjid sultan suriansyah/masjid sultan suriansyah 5.jpg",
+    "gambar": [
+        "/foto/wisata budaya dan sejarah/masjid sultan suriansyah/masjid sultan suriansyah 1.jpg",
+        "/foto/wisata budaya dan sejarah/masjid sultan suriansyah/masjid sultan suriansyah 2.jpg",
+        "/foto/wisata budaya dan sejarah/masjid sultan suriansyah/masjid sultan suriansyah 3.jpg",
+        "/foto/wisata budaya dan sejarah/masjid sultan suriansyah/masjid sultan suriansyah 4.jpg",
+        "/foto/wisata budaya dan sejarah/masjid sultan suriansyah/masjid sultan suriansyah 5.jpg"
+    ],
+    "deskripsi": "Masjid Sultan Suriansyah atau Masjid Kuin adalah sebuah masjid bersejarah yang merupakan masjid tertua di Kalimantan Selatan. Masjid ini dibangun pada masa pemerintahan Sultan Suriansyah (1526–1550), raja Banjar pertama yang memeluk agama Islam. Masjid Kuin merupakan salah satu dari tiga masjid tertua di kota Banjarmasin dan terletak di kawasan Banjar Lama yang dulunya merupakan pusat Kesultanan Banjar. Bangunan ini berdiri di tepian kiri Sungai Kuin, berdekatan dengan makam Sultan Suriansyah. Masjid ini memiliki arsitektur tradisional Banjar, dengan konstruksi panggung dan beratap tumpang. Mihrab masjid ini memiliki atap tersendiri yang terpisah dari bangunan induk dan dihiasi dengan ukiran khas Banjar. Walaupun telah beberapa kali dipugar, struktur kayu ulin sebagai bahan utama bangunan tetap dipertahankan untuk menjaga keasliannya sebagai bagian dari cagar budaya Kerajaan Banjar. Masjid ini memancarkan nuansa etnik yang kuat dan seolah membawa pengunjung kembali ke masa kejayaan kerajaan. Di seberang masjid terdapat dermaga tua yang dahulu merupakan pintu masuk ke wilayah kerajaan dan masih digunakan hingga kini. Letaknya yang strategis di Kota Banjarmasin menjadikan masjid ini mudah diakses dari Jalan Pangeran sebagai pintu gerbang utama ke kawasan Kuin.",
+    "jam-operasional": "Setiap hari, 24 jam (untuk ibadah dan kunjungan luar jam salat dengan sopan)",
+    "harga-tiket": {
+        "umum": "Gratis"
+    },
+    "fasilitas": [
+        "Area parkir",
+        "Toilet umum",
+        "Papan informasi sejarah",
+        "Akses dermaga sungai",
+        "Tempat wudu",
+        "Makam Sultan Suriansyah"
+    ]
+    },
+    "makam-datu-kelampayan": {
+    "nama": "Makam Datu Kelampayan",
+    "lokasi": "Desa Kelampaian Tengah, Kecamatan Astambul, Kabupaten Banjar, Kalimantan Selatan",
+    "koordinat": [-3.4693, 114.8795],
+    "tumbnail": "/foto/wisata budaya dan sejarah/makam datu kelampayan/makam datu kelampayan 1.png",
+    "gambar": [
+      "/foto/wisata budaya dan sejarah/makam datu kelampayan/makam datu kelampayan 1.png",
+      "/foto/wisata budaya dan sejarah/makam datu kelampayan/makan datu kelampayan 2.png",
+      "/foto/wisata budaya dan sejarah/makam datu kelampayan/makan datu kelampayan 3.png"
+    ],
+    "deskripsi": "Makam Syekh Muhammad Arsyad Al-Banjari adalah tempat peristirahatan terakhir ulama besar Kalimantan, pengarang kitab Sabilal Muhtadin. Beliau berjasa besar dalam menyebarkan Islam di Kalimantan dan memengaruhi pemerintahan Kesultanan Banjar. Terletak di Kelampaian, kompleks ini menjadi tujuan ziarah penting dan dilengkapi dengan perpustakaan yang memuat karya-karya beliau.",
+    "jam-operasional": "Setiap hari, 24 jam",
+    "harga-tiket": {
+      "umum": "Gratis"
+    },
+    "fasilitas": [
+      "Area parkir",
+      "Toilet umum",
+      "Musholla",
+      "Perpustakaan",
+      "Pusat informasi",
+      "Spot foto",
+      "Warung dan kios"
+    ]
+  },
+  "masjid-sabilal-muhtadin": {
+  "nama": "Masjid Raya Sabilal Muhtadin",
+  "lokasi": "Jalan Jenderal Sudirman, Kota Banjarmasin, Kalimantan Selatan",
+  "koordinat": [-3.32249, 114.59189],
+  "tumbnail": "/foto/wisata religi/masjid raya sabilal/masjid raya sabilal 1.jpg",
+  "gambar": [
+    "/foto/wisata religi/masjid raya sabilal/masjid raya sabilal 1.jpg",
+    "/foto/wisata religi/masjid raya sabilal/masjid raya sabilal 2.jpg",
+    "/foto/wisata religi/masjid raya sabilal/masjid raya sabilal 3.jpg",
+    "/foto/wisata religi/masjid raya sabilal/masjid raya sabilal 4.jpg",
+    "/foto/wisata religi/masjid raya sabilal/masjid raya sabilal 5.jpg"
+  ],
+  "deskripsi": "Masjid Raya Sabilal Muhtadin adalah salah satu masjid terbesar dan termegah di Kalimantan Selatan, berlokasi strategis di pusat Kota Banjarmasin. Pembangunannya dimulai pada tahun 1986 dan selesai pada 1993. Masjid ini mampu menampung hingga 7.500 jemaah dan memiliki lima kubah berwarna emas dan putih serta empat menara menjulang tinggi. Dilengkapi dengan dekorasi interior khas berupa ukiran kayu dan mozaik indah serta lantai marmer putih yang menawan. Masjid ini juga menjadi pusat kegiatan keagamaan dan sosial masyarakat serta memiliki fasilitas pendidikan seperti madrasah. Dengan area parkir luas dan fasilitas lengkap, masjid ini menjadi ikon penting Banjarmasin dan destinasi wajib bagi wisatawan.",
+  "jam-operasional": "Setiap hari, 24 jam",
+  "harga-tiket": {
+    "umum": "Gratis"
+  },
+  "fasilitas": [
+    "Area parkir",
+    "Kamar mandi",
+    "Tempat wudu",
+    "Madrasah",
+    "Kantin",
+    "Ruang serbaguna",
+    "Perpustakaan"
+  ]
+},
+
+"masjid-bambu-kiram": {
+  "nama": "Masjid Bambu Kiram",
+  "lokasi": "Desa Kiram, Kecamatan Karang Intan, Kabupaten Banjar, Kalimantan Selatan",
+  "koordinat": [-3.49911, 114.77520],
+  "tumbnail": "/foto/wisata religi/masjid bambu kiram/masjid bambu kiram 1.jpg",
+  "gambar": [
+    "/foto/wisata religi/masjid bambu kiram/masjid bambu kiram 1.jpg",
+    "/foto/wisata religi/masjid bambu kiram/masjid bambu kiram 2.jpg",
+    "/foto/wisata religi/masjid bambu kiram/masjid bambu kiram 3.jpg",
+    "/foto/wisata religi/masjid bambu kiram/masjid bambu kiram 4.jpg",
+    "/foto/wisata religi/masjid bambu kiram/masjid bambu kiram 5.jpg"
+  ],
+  "deskripsi": "Masjid Bambu Kiram adalah masjid unik yang terbuat dari bambu dan kayu alami, terletak di Desa Kiram, Kabupaten Banjar. Dibangun sebagai penghormatan kepada ulama besar KH Abdul Qadir Hasan, masjid ini dikenal dengan desain berbentuk tenda atau 'aladdin house'. Lingkungannya yang asri, dikelilingi taman dan kolam ikan, menambah daya tarik bagi para pengunjung yang ingin beribadah maupun menikmati suasana tenang alam.",
+  "jam-operasional": "Setiap hari, 24 jam",
+  "harga-tiket": {
+    "umum": "Gratis"
+  },
+  "fasilitas": [
+    "Area parkir",
+    "Toilet umum",
+    "Tempat wudu",
+    "Taman",
+    "Kolam ikan",
+    "Musholla"
+  ]
+},
+
+"masjid-baangkat": {
+  "nama": "Masjid Suada (Masjid Baangkat)",
+  "lokasi": "Desa Wasah Hilir, Kecamatan Simpur, Kabupaten Hulu Sungai Selatan, Kalimantan Selatan",
+  "koordinat": [-2.82240, 115.45278],
+  "tumbnail": "/foto/wisata religi/masjid ba'angkat/masjid ba'angkat 4.jpg",
+  "gambar": [
+    "/foto/wisata religi/masjid ba'angkat/masjid ba'angkat 1.jpg",
+    "/foto/wisata religi/masjid ba'angkat/masjid ba'angkat 2.jpg",
+    "/foto/wisata religi/masjid ba'angkat/masjid ba'angkat 3.jpg",
+    "/foto/wisata religi/masjid ba'angkat/masjid ba'angkat 4.jpg",
+    "/foto/wisata religi/masjid ba'angkat/masjid ba'angkat 5.jpg"
+  ],
+  "deskripsi": "Masjid Suada, atau lebih dikenal sebagai Masjid Baangkat, didirikan pada tahun 1908 dan merupakan salah satu masjid bersejarah di Kabupaten Hulu Sungai Selatan. Nama 'Baangkat' merujuk pada struktur bangunan panggung khas Kalimantan yang ditopang tiang ulin. Masjid ini dibangun di atas tanah wakaf dan memiliki bentuk arsitektur tradisional Banjar, memperkuat identitas budaya dan sejarah Islam di daerah ini.",
+  "jam-operasional": "Setiap hari, 24 jam",
+  "harga-tiket": {
+    "Umum": "Gratis"
+  },
+  "fasilitas": [
+    "Area parkir",
+    "Tempat wudu",
+    "Toilet umum",
+    "Musholla",
+    "Papan informasi sejarah"
+  ]
+},
+    "makam-sultan-suriansyah":{
+    "nama": "Makam Sultan Suriansyah",
+    "lokasi": "Kampung Kuin Utara, Banjarmasin, Kalimantan Selatan",
+    "koordinat": [-3.287487, 114.562405],
+    "tumbnail": "/foto/wisata religi/makam sultan surainsyah/makam sultan surainsyah 1.png",
+    "gambar": [
+        "/foto/wisata religi/makam sultan surainsyah/makam sultan surainsyah 1.png",
+        "/foto/wisata religi/makam sultan surainsyah/makam sultan surainsyah 2.png",
+        "/foto/wisata religi/makam sultan surainsyah/makam sultan surainsyah 3.png",
+        "/foto/wisata religi/makam sultan surainsyah/makam sultan surainsyah 4.png",
+        "/foto/wisata religi/makam sultan surainsyah/makam sultan surainsyah 5.png"
+    ],
+    "deskripsi": "Makam Sultan Suriansyah berada di kompleks pemakaman kerajaan yang diberi cungkup. Selain Sultan dan ratunya, terdapat makam tokoh penting lainnya seperti Pangeran Muhammad, Pangeran Ahmad, dan Gusti Muhammad Arsyad. Dikelilingi pagar beton besi dan kayu ulin bermotif floralistik, makam ini menjadi tempat ziarah yang ramai dikunjungi. Pada 1980-an dilakukan pemugaran oleh Puslit Arkenas Jakarta yang memperkuat struktur dan memperbaiki ukiran. Sultan Suriansyah adalah raja pertama Kerajaan Banjar yang memeluk Islam dan memerintah dari 1526 hingga 1550.",
+    "jam_operasional": "Setiap hari, 24 jam",
+    "harga-tiket": {
+    "Umum": "Gratis"
+    },
+    "fasilitas": [
+        "Area parkir", 
+        "Toilet umum", 
+        "Musholla", 
+        "Informasi sejarah", 
+        "Spot foto dan selfie", 
+        "Pemandu wisata"
+    ]
+  }
+
 }

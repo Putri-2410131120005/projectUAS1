@@ -1,176 +1,153 @@
 {
-  "menara-pandang": {
+  "menara-pandang-banjarmasin": {
     "nama": "Menara Pandang Banjarmasin",
-    "lokasi": "Jl. Kapten Pierre Tendean No.07, Gadang, Banjarmasin Tengah, Kalimantan Selatan",
-    "koordinat": [-3.3196, 114.5913],
-    "tumbnail":"z-Encanto.jpg",
+    "lokasi": "Siring, Jalan Kapten Pierre Tendean, Banjarmasin, Kalimantan Selatan",
+    "koordinat": [-3.32711, 114.59158],
+    "tumbnail": "/foto/wisata buatan/menara pandang/Menara pandang 1.png",
     "gambar": [
-      "z-Encanto.jpg",
-      "z-Encanto.jpg",
-      "z-Encanto.jpg"
+      "/foto/wisata buatan/menara pandang/Menara pandang 1.png",
+      "/foto/wisata buatan/menara pandang/Menara pandang 2.png",
+      "/foto/wisata buatan/menara pandang/Menara pandang 3.png",
+      "/foto/wisata buatan/menara pandang/Menara pandang 4.png",
+      "/foto/wisata buatan/menara pandang/Menara pandang 5.png"
     ],
-    "deskripsi":"lunalunaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-    "jam-operasional": "08.00 - 18.00 WITA",
+    "deskripsi": "Salah satu ikon wisata buatan di Kalimantan Selatan yang terletak di kawasan Siring, Jalan Kapten Pierre Tendean, tepat di tepi Sungai Martapura, Banjarmasin. Menara ini menjadi daya tarik utama bagi wisatawan yang ingin menikmati panorama Kota Banjarmasin dari ketinggian. Dengan fasilitas yang terus ditingkatkan, tempat ini menjadi pilihan tepat untuk rekreasi bersama keluarga atau teman. Di sekitar menara, terdapat banyak penjual makanan ringan dan minuman. Kawasan ini juga sering digunakan untuk acara seperti lomba Maulid, Banjarmasin Expo, dan kegiatan sosial lainnya.",
+    "jam-operasional": {
+      "senin-jumat": "10.00–21.00 WITA",
+      "sabtu": "10.00–22.00 WITA",
+      "minggu": "08.00–21.00 WITA"
+    },
     "harga-tiket": {
-      "dewasa": "Rp10.000",
-      "anak": "Rp5.000",
-      "parkir_motor": "Rp2.000",
-      "parkir_mobil": "Rp5.000"
+      "umum": "Gratis",
+      "parkir": "Rp2.000"
     },
     "fasilitas": [
-      "Area Parkir",
-      "Gazebo",
-      "Toilet",
-      "Warung Makan",
-      "Spot Foto",
-      "Penyewaan Ban"
+      "Lantai 1: Plaza terbuka",
+      "Lantai 2: Galeri Baiman",
+      "Lantai 3: Power King Space",
+      "Lantai 4: Ruang terbuka panorama",
+      "Area kuliner sekitar menara"
     ]
   },
-  "labirin-pelaihari": {
+  "taman-labirin-pelaihari": {
     "nama": "Taman Labirin Pelaihari",
-    "lokasi": "Jl. Ahmad Yani Km 51, Tambang Ulang, Kabupaten Tanah Laut, Kalimantan Selatan",
-    "koordinat": [-3.8005, 114.8478],
-    "tumbnail":"z-Encanto.jpg",
+    "lokasi": "Pelaihari, Kabupaten Tanah Laut, Kalimantan Selatan",
+    "koordinat": [-3.81053, 114.76361],
+    "tumbnail": "/foto/wisata buatan/taman labirin/taman labirin 1.png",
     "gambar": [
-      "z-Encanto.jpg",
-      "z-Encanto.jpg",
-      "z-Encanto.jpg"
+      "/foto/wisata buatan/taman labirin/taman labirin 1.png",
+      "/foto/wisata buatan/taman labirin/taman labirin 2.png",
+      "/foto/wisata buatan/taman labirin/taman labirin 3.png",
+      "/foto/wisata buatan/taman labirin/taman labirin 4.png",
+      "/foto/wisata buatan/taman labirin/taman labirin 5.png"
     ],
-    "deskripsi":"lunaluna",
-    "jam-operasional": "13.00 - 18.00 WITA",
+    "deskripsi": "Taman Labirin Pelaihari adalah tempat wisata keluarga yang menarik dengan labirin dari tanaman hijau setinggi dua meter. Di tengahnya terdapat menara pandang setinggi 4 meter yang memungkinkan pengunjung menikmati pemandangan labirin dan pegunungan. Fasilitas lainnya termasuk danau buatan, sepeda bebek air, serta berbagai arena bermain.",
+    "jam-operasional": "09.00 – 16.00 WITA",
     "harga-tiket": {
-      "dewasa": "Rp15.000",
-      "anak": "Rp55.000",
-      "parkir_motor": "Rp3.000",
-      "parkir_mobil": "Rp4.000"
+      "umum": "Rp5.000"
     },
     "fasilitas": [
-      "Area Parkir a",
-      "Gazebo b",
-      "Toilet c",
-      "Warung Makan d",
-      "Spot Foto e",
-      "Penyewaan Ban f"
+      "Area bermain anak",
+      "Flying fox dan outbound",
+      "Area perkemahan",
+      "Pondokan dan gazebo",
+      "Warung makan dan kafe",
+      "Spot foto"
     ]
   },
-  "kampung-pelangi": {
+  "kampung-pelangi-banjarbaru": {
     "nama": "Kampung Pelangi Banjarbaru",
-    "lokasi": "Kelurahan Guntung Paikat, Banjarbaru Selatan, Kota Banjarbaru, Kalimantan Selatan",
-    "koordinat": [-3.4565, 114.8453],
-    "tumbnail":"z-Encanto.jpg",
+    "lokasi": "Kelurahan Guntung Paikat, Kecamatan Banjarbaru Selatan, Kota Banjarbaru, Kalimantan Selatan",
+    "koordinat": [-3.45429, 114.83079],
+    "tumbnail": "/foto/wisata buatan/kampung pelangi/kampung pelangi 2.png",
     "gambar": [
-      "z-Encanto.jpg",
-      "z-Encanto.jpg",
-      "z-Encanto.jpg"
+      "/foto/wisata buatan/kampung pelangi/kampung pelangi 1.png",
+     "/foto/wisata buatan/kampung pelangi/kampung pelangi 2.png",
+     "/foto/wisata buatan/kampung pelangi/kampung pelangi 3.png",
+     "/foto/wisata buatan/kampung pelangi/kampung pelangi 4.png",
+     "/foto/wisata buatan/kampung pelangi/kampung pelangi 5.png"
     ],
-    "deskripsi":"lunaluna",
-    "jam-operasional":"",
-    "harga-tiket":"",
-    "fasilitas":""
+    "deskripsi": "Kampung Pelangi Banjarbaru adalah kawasan wisata tematik hasil inisiatif pengecatan rumah warga dengan warna-warni cerah dan mural menarik. Kampung ini juga memiliki menara pandang setinggi 18 meter bernama Menara 33 yang menawarkan pemandangan Sungai Kemuning dan lingkungan sekitar.",
+    "jam-operasional": "16.00 – 23.00 WITA",
+    "harga-tiket": {
+      "gratis": "Pengunjung hanya perlu mengisi buku tamu"
+    },
+    "fasilitas": [
+      "Jogging track",
+      "Taman bermain anak",
+      "Taman baca",
+      "Area fitness outdoor"
+    ]
   },
-  "edupark-rusa": {
+  "edupark-rusa-sambar": {
     "nama": "Edupark Rusa Sambar",
-    "lokasi": "Jalan A. Yani Km 28.7, Landasan Ulin, Banjarbaru, Kalimantan Selatan",
-    "koordinat": [-3.4531, 114.8098],
-    "tumbnail":"z-Encanto.jpg",
+    "lokasi": "Desa Asam-Asam, Kecamatan Jorong, Kabupaten Tanah Laut, Kalimantan Selatan",
+    "koordinat": [-3.96296, 114.58253],
+    "tumbnail": "/foto/wisata buatan/edupark rusa sambar/edupark rusa sambar 2.png",
     "gambar": [
-      "z-Encanto.jpg",
-      "z-Encanto.jpg",
-      "z-Encanto.jpg"
+      "/foto/wisata buatan/edupark rusa sambar/edupark rusa sambar 1.png",
+      "/foto/wisata buatan/edupark rusa sambar/edupark rusa sambar 2.png"
     ],
-    "deskripsi":"lunaluna",
-    "jam-operasional":"",
-    "harga-tiket":"",
-    "fasilitas":""
+    "deskripsi": "Edupark Rusa Sambar merupakan taman konservasi rusa yang dibuka untuk umum dan bertujuan sebagai sarana edukasi tentang satwa. Terletak di lingkungan PLTU Asam-Asam, taman ini dihuni oleh rusa sambar (Cervus unicolor) yang merupakan spesies langka dan dilindungi. Pengunjung dapat berinteraksi langsung dan memberi makan rusa dalam kandang terbuka.",
+    "jam-operasional": "08.00 – 16.00 WITA",
+    "harga-tiket": {
+      "umum": "Gratis"
+    },
+    "fasilitas": [
+      "Kandang rusa terbuka",
+      "Pusat edukasi satwa",
+      "Jalur pejalan kaki",
+      "Spot foto alami"
+    ]
   },
-  "taman-pintar": {
-    "nama": "Taman Pintar Yogyakarta",
-    "lokasi": "Jl. Panembahan Senopati No.1-3, Ngupasan, Gondomanan, Yogyakarta",
-    "koordinat": [-7.8016, 110.3671],
-    "tumbnail":"z-Encanto.jpg",
+  "taman-pintar-banjarbaru": {
+    "nama": "Taman Pintar Banjarbaru",
+    "lokasi": "Jalan Pangeran Suriansyah, Loktabat Utara, Kota Banjarbaru, Kalimantan Selatan",
+    "koordinat": [-3.43745, 114.83120],
+    "tumbnail": "/foto/wisata buatan/taman pintar/taman pintar 4.png",
     "gambar": [
-      "z-Encanto.jpg",
-      "z-Encanto.jpg",
-      "z-Encanto.jpg"
+      "/foto/wisata buatan/taman pintar/taman pintar 1.png",
+      "/foto/wisata buatan/taman pintar/taman pintar 2.png",
+      "/foto/wisata buatan/taman pintar/taman pintar 3.png",
+      "/foto/wisata buatan/taman pintar/taman pintar 4.png",
+      "/foto/wisata buatan/taman pintar/taman pintar 5.png"
     ],
-    "deskripsi":"lunaluna",
-    "jam-operasional":"",
-    "harga-tiket":"",
-    "fasilitas":""
+    "deskripsi": "Taman Pintar Banjarbaru adalah ruang terbuka publik yang ramah anak dan keluarga. Dirancang sebagai taman edukasi, tempat ini dilengkapi dengan berbagai alat permainan dan peraga sains sederhana yang mendorong pengunjung untuk belajar sambil bermain. Tempat ini cocok untuk rekreasi sekaligus menambah wawasan.",
+    "jam-operasional": "08.00 – 18.00 WITA",
+    "harga-tiket": {
+      "umum": "Gratis"
+    },
+    "fasilitas": [
+      "Alat permainan edukatif",
+      "Ruang baca",
+      "Area bermain anak",
+      "Toilet dan tempat duduk"
+    ]
   },
   "kebun-raya-banua": {
     "nama": "Kebun Raya Banua",
-    "lokasi": "Jl. Aneka Tambang, Palam, Kecamatan Cempaka, Banjarbaru, Kalimantan Selatan",
-    "koordinat": [-3.4719, 114.8457],
-    "tumbnail":"z-Encanto.jpg",
+    "lokasi": "Jalan Aneka Tambang, Banjarbaru, Kalimantan Selatan",
+    "koordinat": [-3.49703, 114.81785],
+    "tumbnail": "/foto/wisata buatan/kebun raya/kebun raya 3.png",
     "gambar": [
-      "z-Encanto.jpg",
-      "z-Encanto.jpg",
-      "z-Encanto.jpg"
+      "/foto/wisata buatan/kebun raya/kebun raya 1.png",
+      "/foto/wisata buatan/kebun raya/kebun raya 2.png",
+      "/foto/wisata buatan/kebun raya/kebun raya 3.png",
+      "/foto/wisata buatan/kebun raya/kebun raya 4.png",
+      "/foto/wisata buatan/kebun raya/kebun raya 5.png"
     ],
-    "deskripsi":"lunaluna",
-    "jam-operasional":"",
-    "harga-tiket":"",
-    "fasilitas":""
-  },
-  "amanah-borneo-park": {
-    "nama": "Amanah Borneo Park (ABP)",
-    "lokasi": "Jl. Taruna Bhakti, Palam, Kecamatan Cempaka, Banjarbaru, Kalimantan Selatan",
-    "koordinat": [-3.4739, 114.8096],
-    "tumbnail":"z-Encanto.jpg",
-    "gambar": [
-      "z-Encanto.jpg",
-      "z-Encanto.jpg",
-      "z-Encanto.jpg"
-    ],
-    "deskripsi":"lunaluna",
-    "jam-operasional":"",
-    "harga-tiket":"",
-    "fasilitas":""
-  },
-  "kebun-durian-patas": {
-    "nama": "Agrowisata Kebun Durian Patas",
-    "lokasi": "Desa Patas, Kecamatan Tanta, Kabupaten Tabalong, Kalimantan Selatan",
-    "koordinat": [-2.1050, 115.3680],
-    "tumbnail":"z-Encanto.jpg",
-    "gambar": [
-      "/wisata buatan/agrowisata kebun durian patas/agrowisata 2.webp",
-      "/wisata buatan/agrowisata kebun durian patas/agrowisata 3",
-      "z-Encanto.jpg"
-    ],
-    "deskripsi":"lunaluna",
-    "jam-operasional":"",
-    "harga-tiket":"",
-    "fasilitas":""
-  },
-  "jembatan-nateh": {
-    "nama": "Jembatan Gantung Desa Nateh",
-    "lokasi": "Desa Nateh, Kecamatan Batang Alai Timur, Kabupaten Hulu Sungai Tengah, Kalimantan Selatan",
-    "koordinat": [-2.5833, 115.4167],
-    "tumbnail":"z-Encanto.jpg",
-    "gambar": [
-      "z-Encanto.jpg",
-      "z-Encanto.jpg",
-      "z-Encanto.jpg"
-    ],
-    "deskripsi":"lunaluna",
-    "jam-operasional":"",
-    "harga-tiket":"",
-    "fasilitas":""
-  },
-  "kampung-hijau": {
-    "nama": "Kampung Hijau Sungai Jingah",
-    "lokasi": "Kelurahan Sungai Jingah, Banjarmasin Utara, Kota Banjarmasin, Kalimantan Selatan",
-    "koordinat": [-3.2985, 114.6032],
-    "tumbnail":"z-Encanto.jpg",
-    "gambar": [
-      "z-Encanto.jpg",
-      "z-Encanto.jpg",
-      "z-Encanto.jpg"
-    ],
-    "deskripsi":"lunaluna",
-    "jam-operasional":"",
-    "harga-tiket":"",
-    "fasilitas":""
+    "deskripsi": "Kebun Raya Banua adalah taman botani terbesar di Kalimantan Selatan yang dikelola oleh pemerintah provinsi. Tempat ini memiliki koleksi tanaman endemik dan langka, serta digunakan untuk penelitian, edukasi, dan wisata alam. Suasananya yang asri menjadikannya tempat yang ideal untuk berjalan santai, belajar mengenal tanaman, dan berfoto.",
+    "jam-operasional": "08.00 – 16.00 WITA",
+    "harga-tiket": {
+      "umum": "Gratis"
+    },
+    "fasilitas": [
+      "Koleksi tanaman botani",
+      "Greenhouse",
+      "Taman bermain anak",
+      "Jalur pejalan kaki dan jogging",
+      "Spot edukasi tanaman"
+    ]
   }
+  
 }
