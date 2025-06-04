@@ -34,11 +34,10 @@ Promise.all([
 
 // PETA & RUTE
 function setupMap(data) {
-  const map = L.map("map").setView(data.koordinat, 13);
-  map.zoomControl.setPosition("bottomright");
+  const map = L.map("map").setView(data.koordinat, 15);
+  map.zoomControl.setPosition("bottomleft");
 
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: "&copy; OpenStreetMap contributors",
   }).addTo(map);
 
   L.marker(data.koordinat)
@@ -53,7 +52,7 @@ function setupMap(data) {
     const coordinates = await getCoordinates(startInput);
 
     if (coordinates) {
-      if (control) map.removeControl(control);
+      
 
       control = L.Routing.control({
         waypoints: [
@@ -64,7 +63,6 @@ function setupMap(data) {
         draggableWaypoints: false,
         addWaypoints: false,
         showAlternatives: false,
-        createMarker: () => null,
       }).addTo(map);
 
       control.on("routesfound", function (e) {

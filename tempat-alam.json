@@ -1,14 +1,14 @@
 {
-  "takisung": {
+  "tangkisung": {
     "nama": "Pantai Takisung",
     "lokasi": "Desa Takisung, Kecamatan Takisung, Kabupaten Tanah Laut, Kalimantan Selatan",
     "koordinat": [-3.86719, 114.60809],
     "tumbnail": "z-Encanto.jpg",
     "gambar": [
-      "/wisata alam/pantai tangkisung/pantai tangkisung 1.jpg",
-      "/wisata alam/pantai tangkisung/pantai tangkisung 2.png",
-      "/wisata alam/pantai tangkisung/pantai tangkisung 3.jpg",
-      "/wisata alam/pantai tangkisung/pantai tangkisung 5.jpg"
+      "/foto/wisata alam/pantai tangkisung/pantai tangkisung 1.jpg",
+      "/foto/wisata alam/pantai tangkisung/pantai tangkisung 2.png",
+      "/foto/wisata alam/pantai tangkisung/pantai tangkisung 3.jpg",
+      "/foto/wisata alam/pantai tangkisung/pantai tangkisung 5.jpg"
     ],
     "deskripsi":"Pantai Takisung menawarkan panorama laut yang menenangkan dengan pasir yang luas dan ombak yang ramah untuk bermain air. Berlokasi di Tanah Laut, Kalimantan Selatan, pantai ini cocok untuk liburan keluarga atau sekadar melepas penat dari hiruk-pikuk kota. Fasilitas lengkap dan penataan yang rapi membuat pengunjung betah berlama-lama. Keindahan alam dan suasana teduh dari deretan pohon nyiur jadi daya tarik utamanya!",
     "jam-operasional": "24 jam",
@@ -34,7 +34,6 @@
     "koordinat": [-4.097, 114.629],
     "tumbnail": "z-Encanto.jpg",
     "gambar": [
-      "z-Encanto.jpg",
       "z-Encanto.jpg",
       "z-Encanto.jpg"
     ],
@@ -348,10 +347,7 @@
       "Ruang terbuka untuk santai",
       "Cafe",
       "Homestay & Resort",
-      "Bamboo Rafting",
-      ""
+      "Bamboo Rafting"
     ]
   }
-
-
 }
