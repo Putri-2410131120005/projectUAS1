@@ -351,7 +351,155 @@
       "Bamboo Rafting",
       ""
     ]
+  }, 
+  "gunung_halau_halau": {
+    "nama": "Gunung Halau-Halau",
+    "lokasi": "Desa Kiyu dan Desa Loksado, Kecamatan Loksado, Kabupaten Hulu Sungai Selatan, Kalimantan Selatan, Indonesia",
+    "koordinat": [-2.7775, 115.4944],
+    "tumbnail": "z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ],
+    "deskripsi":"Gunung Halau-Halau, juga dikenal sebagai Gunung Besar, adalah puncak tertinggi di Pegunungan Meratus dengan ketinggian sekitar 1.901 mdpl. Terletak di Desa Kiyu dan Loksado, Kabupaten Hulu Sungai Selatan, Kalimantan Selatan, gunung ini menjadi destinasi favorit para pendaki karena menawarkan jalur menantang, hutan tropis yang asri, serta pemandangan alam yang memukau dari puncaknya. Pendakian biasanya memakan waktu 2–3 hari dan sangat cocok bagi pecinta alam dan petualangan.",
+    "jam-operasional": "24 jam (Untuk mendaki pendaftaran dibuka pada pukul 07.00 - 16.00 WITA) ",
+    "harga-tiket":{
+      "weekdays-weekend":"Rp15.000 (belum termasuk biaya fasilitas)" 
+    },
+    "fasilitas": [
+      "Jalur pendakian",
+      "Pos pendakian",
+      "Area berkemah di beberaapa pos pendakian",
+      "Sumber air alami",
+      "Jasa porter dan guide lokal",
+      "Daya tarik alam 'Air Terjun Sungai Karo'"
+    ]
+  }, 
+  "bukit_langara": {
+    "nama": "Bukit Langara",
+    "lokasi": "Desa Lumpangi, Kecamatan Loksado, Kabupaten Hulu Sungai Selatan, Kalimantan Selatan, Indonesia",
+    "koordinat": [-2.7385, 115.4830],
+    "tumbnail": "z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ],
+    "deskripsi":"Bukit Langara terletak di Desa Lumpangi, Kecamatan Loksado, Kalimantan Selatan. Bukit ini menyuguhkan pemandangan indah Pegunungan Meratus dan aliran Sungai Amandit dari atas ketinggian. Pendakian menuju puncak memakan waktu sekitar 30 hingga 60 menit melalui jalur tanah dan bebatuan. Dari atas, pengunjung bisa menikmati panorama alam, matahari terbit atau terbenam, serta suasana tenang khas pegunungan. Bukit ini juga menjadi bagian dari kawasan Geopark Meratus yang kaya nilai geologi.",
+    "jam-operasional": "24 jam (Untuk mendaki pendaftaran dibuka pada pukul 07.00 - 16.00 WITA) ",
+    "harga-tiket":{
+      "weekdays-weekend":"Gratis (belum termasuk biaya fasilitas)",
+      "parkir mobil":"Rp10.000",
+      "parkir-motor":"Rp5.000"
+    },
+    "fasilitas": [
+      "Jalur pendakian",
+      "Pos pendakian",
+      "Area berkemah di beberaapa pos pendakian",
+      "Sumber air alami",
+      "Jasa porter dan guide lokal",
+      "Daya tarik alam 'Air Terjun Sungai Karo'"
+    ]
+  }, 
+  "bukit_batu_laki": {
+    "nama": "Bukit Batu Laki",
+    "lokasi": "Desa Batu Laki, Kecamatan Padang Batung, Kabupaten Hulu Sungai Selatan, Kalimantan Selatan, Indonesia",
+    "koordinat": [-2.8611, 115.2996],
+    "tumbnail": "z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ],
+    "deskripsi": "Bukit Batu Laki adalah destinasi wisata alam yang terletak di Desa Batu Laki, Kecamatan Padang Batung, Kalimantan Selatan. Bukit ini terkenal dengan formasi batu kapur yang unik dan panorama alam Pegunungan Meratus yang memukau. Jalur pendakiannya cukup pendek dan cocok untuk pemula, menjadikannya tempat favorit untuk menikmati pemandangan hutan, sungai, dan matahari terbenam dari ketinggian." ,
+    "jam-operasional": "06.00 - 17.30 WITA",
+    "harga-tiket":{
+      "weekdays-weekend":"Rp5.000 - Rp10.000 (belum termasuk biaya fasilitas)",
+      "parkir mobil":"Rp10.000",
+      "parkir-motor":"Rp5.000"
+    },
+    "fasilitas": [
+      "Area Parkir",
+      "Jalur pendakian yang terawat",
+      "Spot foto alam dan batuan",
+      "Petunjuk Arah"
+    ]
+  }, 
+  "bukit_batu_bini": {
+    "nama": "Bukit Batu Bini",
+    "lokasi": "Desa Batu Bini, Kec. Padang Batung, Kandangan, Kabupaten Hulu Sungai Selatan, Kalimantan Selatan, Indonesia",
+    "koordinat": [-2.8283, 115.3190],
+    "tumbnail": "z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ], 
+    "deskripsi":"Bukit Batu Bini adalah destinasi wisata alam yang menawarkan pemandangan indah Pegunungan Meratus. Dengan ketinggian sekitar 220 meter di atas permukaan laut, bukit ini cocok untuk pendaki pemula maupun wisatawan yang ingin menikmati panorama alam tanpa harus menempuh perjalanan panjang. Di kawasan ini juga terdapat Goa Singa atau Goa Lukis, yang memiliki lukisan dan patung-patung menarik di dalamnya. Perjalanan menuju puncak bukit memakan waktu sekitar 20 menit dengan jalur yang telah dilengkapi tangga dan jalan bersemen.",
+    "jam-operasional": "06.00 - 17.30 WITA",
+    "harga-tiket":{
+      "weekdays-weekend":"Rp6.000 (belum termasuk biaya fasilitas)",
+      "parkir mobil":"Rp10.000",
+      "parkir-motor":"Rp5.000"
+    },
+    "fasilitas": [
+      "Area Parkir",
+      "Jalur pendakian dengan tangga dan jalan bersemen",
+      "Spot foto menaarik di puncak bukit",
+      "Warung dan toilet di area bawah bukit"
+    ]
+  },
+  "bukit_matang_keladan": {
+    "nama": "Bukit Matang Keladan",
+    "lokasi": "Desa Tiwingan Lama, Kecamatan Aranio, Kabupaten Banjar, Kalimantan Selatan, Indonesia",
+    "koordinat": [-3.5258, 115.0094],
+    "tumbnail": "z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ], 
+    "deskripsi":"Bukit Matang Kaladan adalah destinasi wisata alam yang menawarkan pemandangan indah Waduk Riam Kanan dari ketinggian. Dengan ketinggian sekitar 150 meter di atas permukaan laut, bukit ini cocok untuk pendaki pemula maupun wisatawan yang ingin menikmati panorama alam tanpa harus menempuh perjalanan panjang. Perjalanan menuju puncak bukit memakan waktu sekitar 30 menit dengan jalur yang telah dilengkapi tangga dan tali rotan untuk membantu pendakian.",
+    "jam-operasional": "06.00 - 18.00 WITA",
+    "harga-tiket":{
+      "weekdays-weekend":"Rp5.000 (belum termasuk biaya fasilitas)",
+      "parkir mobil":"Rp10.000",
+      "parkir-motor":"Rp5.000"
+    },
+    "fasilitas": [
+      "Area Parkir",
+      "Jalur pendakian telah disemen",
+      "Spot foto instagramable",
+      "Musholla",
+      "Toilet", 
+      "Warung makan dan minum"
+    ]
+  }, 
+  "bukit_rimpi": {
+    "nama": "Bukit Rimpi (Bukit Teletubbies)",
+    "lokasi": "Desa Tiwingan Lama, Kecamatan Aranio, Kabupaten Banjar, Kalimantan Selatan, Indonesia",
+    "koordinat": [-3.5258, 115.0094],
+    "tumbnail": "z-Encanto.jpg",
+    "gambar": [
+      "z-Encanto.jpg",
+      "z-Encanto.jpg",
+      "z-Encanto.jpg"
+    ], 
+    "deskripsi":"",
+    "jam-operasional": "06.00 - 18.00 WITA",
+    "harga-tiket":{
+      "weekdays-weekend":"Rp5.000 (belum termasuk biaya fasilitas)",
+      "parkir mobil":"Rp10.000",
+      "parkir-motor":"Rp5.000"
+    },
+    "fasilitas": [
+      "Area Parkir",
+      "Jalur pendakian telah disemen",
+      "Spot foto instagramable",
+      "Musholla",
+      "Toilet", 
+      "Warung makan dan minum"
+    ]
   }
-
-
 }
