@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Detail Tour Guide</title>
+  <link rel="stylesheet" href="cssnya.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script defer src="detail.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <img id="profile-img" src="" alt="Profile"/>
+      <div class="profile-info">
+        <h2 id="name"></h2>
+        <div id="stars"></div>
+        <p><i class="fas fa-phone"></i> <span id="phone"></span></p>
+        <p><i class="fas fa-envelope"></i> <span id="email"></span></p>
+        <p><strong>Bahasa:</strong> <span id="languages"></span></p>
+        <p><strong>Wilayah Tour:</strong> <span id="tour-area"></span></p>
+        <p><strong>Info Detail:</strong></p>
+        <p id="info-detail"></p>
+      </div>
+    </div>
+
+    <div class="review-box">
+      <p id="ulasan">Ulasan user lain</p>
+      <div class="review-box">
+  <div id="review-list">
+    <p>Belum ada ulasan.</p>
+  </div>
+</div>
+
+<!-- Form Komentar -->
+<div class="review-form">
+  <h3>Tulis Ulasan Anda</h3>
+  <div class="star-rating" id="user-stars"></div>
+  <textarea id="user-comment" placeholder="Tulis komentar Anda..." rows="4"></textarea>
+  <button onclick="submitReview()">Kirim Ulasan</button>
+</div>
+
+    </div>
+  </div>
+
+  <button onclick="history.back()" class="back-btn"><i class="fas fa-arrow-left"></i> Kembali</button>
+</body>
+</html>
