@@ -67,3 +67,21 @@ function moveCarousel(direction) {
 function goToDetail(id) {
   window.location.href = `detail.html?guide=${id}`;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const dropdownTrigger = document.querySelector('.dropdown > a');
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+
+  if (dropdownTrigger && dropdownMenu) {
+    dropdownTrigger.addEventListener('click', function (e) {
+      e.preventDefault();
+      dropdownMenu.classList.toggle('show');
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!dropdownMenu.contains(e.target) && !dropdownTrigger.contains(e.target)) {
+        dropdownMenu.classList.remove('show');
+      }
+    });
+  }
+});
