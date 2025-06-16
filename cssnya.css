@@ -55,7 +55,7 @@ h1 {
 
 /* === CARD STYLE === */
 .card {
-  background: #56DBCA;
+  background: #ffffff;
   border-radius: 20px;
   width: 220px;
   height: 370px;
@@ -66,7 +66,7 @@ h1 {
   transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.3s ease;
   opacity: 0.6;
   flex-shrink: 0;
-  background-color: #56DBCA;
+  background-color: #ffffff;
 }
 
 .card.active {
@@ -79,7 +79,7 @@ h1 {
 .card-header {
   width: 100px;
   height: 16px;
-  background-color: #3C8CA7;
+  background-color: #ffe150;
   border-radius: 10px;
   margin: 0 auto 12px;
 }
@@ -116,7 +116,7 @@ h1 {
 }
 
 .detail-btn {
-  background-color: #FF7700;
+  background-color: #2f3ede;
   border: none;
   color: white;
   padding: 10px 18px;
