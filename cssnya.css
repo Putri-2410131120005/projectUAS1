@@ -1,20 +1,23 @@
+/* cssnya.css - Penjelasan per bagian dan fungsinya */
+
 /* === GLOBAL STYLE === */
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #F3EEE5;
+  margin: 0;                            /* Menghilangkan margin default */
+  padding: 0;                           /* Menghilangkan padding default */
+  font-family: 'Segoe UI', sans-serif; /* Font utama */
+  background-color: #F3EEE5;           /* Warna latar utama */
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100vh;                   /* Tinggi minimal layar penuh */
 }
 
 /* === HEADER === */
 h1 {
-  margin: 30px 0 20px;
-  color: #fff;
-  font-size: 32px;
-  font-weight: bold;
+  margin: 30px 0 20px;     /* Spasi atas dan bawah */
+  color: #fff;             /* Warna teks putih */
+  font-size: 32px;         /* Ukuran huruf besar */
+  font-weight: bold;       /* Tebal */
 }
 
 /* === CAROUSEL SECTION === */
@@ -26,7 +29,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 20px;
+  padding: 0 20px;         /* Spasi kiri kanan */
 }
 
 .carousel-wrapper {
@@ -37,7 +40,7 @@ h1 {
 .carousel {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  gap: 20px;
+  gap: 20px;               /* Jarak antar kartu */
 }
 
 /* === NAVIGATION BUTTONS === */
@@ -63,25 +66,13 @@ h1 {
   border-radius: 20px;
   width: 220px;
   height: 370px;
-  padding: 25px 20px 50px 20px; /* dinaikkan padding-bottom agar tulisan email lebih naik */
+  padding: 25px 20px 50px 20px; /* Padding bawah besar agar tombol tidak tabrakan */
   text-align: center;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
   transform: scale(1);
-  transition: transform 0.4s cubic-bezier(0.4,0,0.2,1), box-shadow 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s ease;
+  transition: transform 0.4s, box-shadow 0.4s, opacity 0.3s;
   opacity: 0.6;
   flex-shrink: 0;
-  background-color: #ffffff;
-}
-.card .detail-btn {
-  position: absolute;
-  left: 50%;
-  bottom: 32px; /* dinaikkan supaya tidak nabrak tulisan email */
-  transform: translateX(-50%);
-  width: 60%;
-  padding: 7px 0;
-  font-size: 13px;
-  margin: 0;
-  display: block;
 }
 
 .card:hover,
@@ -149,10 +140,6 @@ h1 {
   transition: background 0.3s;
 }
 
-.back-btn i {
-  margin-right: 6px;
-}
-
 .profile {
   display: flex;
   flex-direction: column;
@@ -200,15 +187,7 @@ h1 {
   color: #f4c150;
 }
 
-#info-detail, #tour-area, #languages {
-  font-size: 15px;
-  color: #333;
-  background: #f5f5f5;
-  padding: 10px 15px;
-  border-radius: 10px;
-  margin: 8px 0;
-}
-
+/* === REVIEW SECTION === */
 .review-box {
   background-color: #fbd85d;
   flex: 1;
@@ -224,37 +203,6 @@ h1 {
   width: 100%;
 }
 
-/* === RESPONSIVE DESIGN === */
-@media (max-width: 768px) {
-  .carousel {
-    gap: 10px;
-  }
-
-  .card {
-    width: 200px;
-  }
-
-  .container {
-    flex-direction: column;
-    padding: 20px;
-    margin: 20px;
-  }
-
-  .profile {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
-
-  .profile-info p {
-    justify-content: center;
-  }
-
-  .back-btn {
-    position: static;
-    margin-bottom: 20px;
-  }
-}
 .review-form {
   background-color: white;
   border-radius: 20px;
@@ -308,6 +256,7 @@ textarea#user-comment {
   background-color: #ffe88f;
 }
 
+/* === REVIEW LIST === */
 #review-list {
   text-align: left;
   padding: 10px;
@@ -332,98 +281,92 @@ textarea#user-comment {
 .review-comment {
   color: #444;
 }
+
+/* === NAVBAR DAN FOOTER === */
 .navbar {
-      width: 100vw !important;
-      left: 0;
-      right: 0;
-      position: relative;
-    }
-    body {
-      margin: 0;
-      padding: 0;
-    }
-    .footer {
-    background-color: #3b5998; /* Blue footer color */
-    color: #fff;
-    padding: 40px 5%;
-    text-align: center;
-    width: 100vw !important;
-    margin: 50px 0 0 0;
+  width: 100vw !important;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+.footer {
+  background-color: #3b5998;
+  color: #fff;
+  padding: 40px 5%;
+  text-align: center;
+  width: 100vw !important;
+  margin-top: 50px;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
 .footer-column {
-    flex: 1;
-    min-width: 250px;
-    margin: 20px;
-    text-align: left;
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+  text-align: left;
 }
 
 .footer-column h3 {
-    color: #ffc107; /* Yellow for headings */
-    margin-bottom: 15px;
+  color: #ffc107;
+  margin-bottom: 15px;
 }
 
 .footer-column ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .footer-column ul li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .footer-column ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .footer-column ul li a:hover {
-    color: #ffc107;
+  color: #ffc107;
 }
 
 .footer-column p {
-    margin: 5px 0;
-}
-
-.social-media-icons {
-    margin-top: 15px;
+  margin: 5px 0;
 }
 
 .social-media-icons a {
-    color: #fff;
-    font-size: 1.5em;
-    margin-right: 15px;
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: #fff;
+  font-size: 1.5em;
+  margin-right: 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .social-media-icons a:hover {
-    color: #ffc107;
+  color: #ffc107;
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255,255,255,0.2);
-    padding-top: 20px;
-    font-size: 0.9em;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 20px;
+  font-size: 0.9em;
 }
 
-/* Responsive Design */
+/* RESPONSIVE */
 @media (max-width: 768px) {
-    /* No specific navbar responsive CSS needed here as Bootstrap handles it */
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .footer-column {
-        text-align: center;
-    }
+  .footer-column {
+    text-align: center;
+  }
 }
