@@ -1,40 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!-- htmlnya.html -->
+<!DOCTYPE html> <!-- Menentukan jenis dokumen HTML5 -->
+<html lang="en"> <!-- Bahasa halaman: Inggris (bisa disesuaikan ke 'id') -->
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tour Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Agar tampilan responsive di semua perangkat -->
+  <title>Tour Guide</title> <!-- Judul halaman -->
+  
+  <!-- Bootstrap CSS untuk styling -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- CSS Kustom -->
   <link rel="stylesheet" href="cssnya.css">
+
+  <!-- Font Awesome untuk ikon sosial media -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
-<body style="background-color: #a5bfff;"></body>
+<body style="background-color: #a5bfff;"> <!-- Warna latar belakang -->
 
-<body>
-  <!-- NAVBAR SAMA SEPERTI HOMEPAGE -->
+  <!-- NAVBAR ambil di homepage -->
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3b5998; color: white;">
     <div class="container-fluid">
-      <a href="https://www.instagram.com/visit_kalsel_new?igsh=bWttenV5MDU4cmJ2"><img src="/z-instagram.png" alt="Logo"
-          style="height: 40px; width: auto;" class="me-2 p-2 rounded-circle"></a>
-      <a href="https://facebook.com/WisataKalimantanOfficial"><img src="/z-facebook.png" alt="Logo"
-          style="height: 40px; width: auto;" class="me-2 p-2 rounded-circle"></a>
-      <a href="https://youtube.com/@wisatakalimantan?feature=shared"><img src="/z-youtube.png" alt="Logo"
-          style="height: 40px; width: auto;" class="me-2 p-2 rounded-circle"></a>
+      <!-- Ikon sosial media -->
+      <a href="https://www.instagram.com/visit_kalsel_new?igsh=bWttenV5MDU4cmJ2">
+        <img src="/z-instagram.png" alt="Logo" style="height: 40px; width: auto;" class="me-2 p-2 rounded-circle">
+      </a>
+      <a href="https://facebook.com/WisataKalimantanOfficial">
+        <img src="/z-facebook.png" alt="Logo" style="height: 40px; width: auto;" class="me-2 p-2 rounded-circle">
+      </a>
+      <a href="https://youtube.com/@wisatakalimantan?feature=shared">
+        <img src="/z-youtube.png" alt="Logo" style="height: 40px; width: auto;" class="me-2 p-2 rounded-circle">
+      </a>
       <p class="navbar-brand fw-bold pt-3">Jelajah Banua</p>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- Tombol toggle menu (responsive mobile) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
+      <!-- Menu navigasi utama -->
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="/homepage.html">Beranda</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Wisata
-            </a>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Wisata</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="/wisata-alam.html">Wisata Alam</a></li>
               <li><a class="dropdown-item" href="/wisata-religi.html">Wisata Religi</a></li>
@@ -53,46 +61,55 @@
     </div>
   </nav>
 
+  <!-- JUDUL -->
   <h1>Tour Guide Pilihan</h1>
+
+  <!-- CAROUSEL -->
   <div class="carousel-container">
+    <!-- Tombol navigasi kiri -->
     <button onclick="moveCarousel(-1)" class="nav-button">←</button>
+    <!-- Wrapper untuk elemen kartu -->
     <div class="carousel-wrapper">
-      <div id="carousel" class="carousel"></div>
+      <div id="carousel" class="carousel"></div> <!-- Akan diisi dinamis via script.js -->
     </div>
+    <!-- Tombol navigasi kanan -->
     <button onclick="moveCarousel(1)" class="nav-button">→</button>
   </div>
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-column">
-                <h3>Jelajah Banua</h3>
-                <p>Portal Wisata Digital Kalimantan Selatan</p>
-            </div>
-            <div class="footer-column">
-                <h3>Navigasi</h3>
-                <ul>
-                    <li><a href="/homepage.html">Beranda</a></li>
-                    <li><a href="#">Destinasi Wisata</a></li>
-                    <li><a href="/htmlnya.html">Tour Guide</a></li>
-                    <li><a href="/tentangkami.html">Tentang Kami</a></li>
-                    <li><a href="/hubungibaru.html">Hubungi Kami</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Kontak</h3>
-                <p>Email: info@jelajahbanua.com</p>
-                <p>Telepon: +62 815 2151 9244</p>
-                <div class="social-media-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Jelajah Banua</h3>
+        <p>Portal Wisata Digital Kalimantan Selatan</p>
+      </div>
+      <div class="footer-column">
+        <h3>Navigasi</h3>
+        <ul>
+          <li><a href="/homepage.html">Beranda</a></li>
+          <li><a href="#">Destinasi Wisata</a></li>
+          <li><a href="/htmlnya.html">Tour Guide</a></li>
+          <li><a href="/tentangkami.html">Tentang Kami</a></li>
+          <li><a href="/hubungibaru.html">Hubungi Kami</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Kontak</h3>
+        <p>Email: info@jelajahbanua.com</p>
+        <p>Telepon: +62 815 2151 9244</p>
+        <div class="social-media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Jelajah Banua. All right reserved. | Kebijakan Privasi | Syarat & Ketentuan</p>
-        </div>
-    </footer>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Jelajah Banua. All right reserved. | Kebijakan Privasi | Syarat & Ketentuan</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
   <script src="script.js"></script>
 </body>
-
 </html>

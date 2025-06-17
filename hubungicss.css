@@ -1,29 +1,31 @@
+/* ======= hubungicss.css ======= */
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Font utama halaman */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Light background */
-    color: #333;
+    background-color: #f4f4f4; /* Warna latar belakang terang */
+    color: #333; /* Warna teks */
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Tinggi minimum layar penuh */
 }
 
-/* No specific CSS for .navbar here, as it uses Bootstrap classes and inline style */
-
+/* Bagian utama halaman */
 .contact-section {
-    flex-grow: 1; /* Allows main content to expand */
+    flex-grow: 1; /* Membuat section ini tumbuh fleksibel */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px 20px;
-    background-image: url('anjungan-bg.jpg'); /* Replace with your image */
+    background-image: url('anjungan-bg.jpg'); /* Gambar latar belakang */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
 }
 
+/* Overlay gelap transparan di atas background */
 .contact-section::before {
     content: '';
     position: absolute;
@@ -31,33 +33,37 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* White overlay with transparency */
+    background-color: rgba(0, 0, 0, 0.7); /* Hitam transparan */
     z-index: 1;
 }
 
+/* Kontainer form kontak */
 .contact-form-container {
-    background-color: rgba(255, 255, 255, 0.95); /* Slightly less transparent white background for form */
+    background-color: rgba(255, 255, 255, 0.95); /* Putih transparan */
     padding: 30px 40px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     width: 100%;
     max-width: 600px;
     text-align: center;
-    position: relative; /* To be above the overlay */
+    position: relative; /* Untuk berada di atas overlay */
     z-index: 2;
 }
 
+/* Judul form */
 .form-title {
-    color: #007bff; /* Example title color */
+    color: #007bff; /* Biru */
     margin-bottom: 30px;
     font-size: 1.8em;
 }
 
+/* Grup input */
 .contact-form .form-group {
     text-align: left;
     margin-bottom: 20px;
 }
 
+/* Label form */
 .contact-form label {
     display: block;
     margin-bottom: 8px;
@@ -65,15 +71,16 @@ body {
     color: #555;
 }
 
+/* Input dan textarea */
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    width: calc(100% - 20px); /* Adjusting for padding */
+    width: calc(100% - 20px);
     padding: 12px 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1em;
-    background-color: #fffac8; /* Light yellow background as in image */
+    background-color: #fffac8; /* Kuning muda */
 }
 
 .contact-form textarea {
@@ -81,8 +88,9 @@ body {
     min-height: 120px;
 }
 
+/* Tombol kirim */
 .contact-form .send-button {
-    background-color: #ffc107; /* Yellow background for send button */
+    background-color: #ffc107; /* Kuning */
     color: #333;
     padding: 12px 30px;
     border: none;
@@ -91,15 +99,16 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 20px;
-    float: right; /* To position next to message box */
+    float: right;
 }
 
 .contact-form .send-button:hover {
-    background-color: #e0a800; /* Darker yellow on hover */
+    background-color: #e0a800; /* Kuning lebih gelap saat hover */
 }
 
+/* Footer */
 .footer {
-    background-color: #3b5998; /* Blue footer color */
+    background-color: #3b5998; /* Biru tua */
     color: #fff;
     padding: 40px 5%;
     text-align: center;
@@ -120,7 +129,7 @@ body {
 }
 
 .footer-column h3 {
-    color: #ffc107; /* Yellow for headings */
+    color: #ffc107; /* Judul kolom warna kuning */
     margin-bottom: 15px;
 }
 
@@ -147,6 +156,7 @@ body {
     margin: 5px 0;
 }
 
+/* Ikon sosial media */
 .social-media-icons {
     margin-top: 15px;
 }
@@ -169,9 +179,8 @@ body {
     font-size: 0.9em;
 }
 
-/* Responsive Design */
+/* RESPONSIVE UNTUK MOBILE */
 @media (max-width: 768px) {
-    /* No specific navbar responsive CSS needed here as Bootstrap handles it */
     .footer-content {
         flex-direction: column;
         align-items: center;
