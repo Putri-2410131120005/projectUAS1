@@ -1,1 +1,57 @@
-{}
+{
+    "kebun-raya-banua": {
+    "nama": "Kebun Raya Banua",
+    "lokasi": "Jalan Aneka Tambang, Banjarbaru, Kalimantan Selatan",
+    "koordinat": [-3.49703, 114.81785],
+    "tumbnail": "/foto/wisata buatan/kebun raya/kebun raya 3.png",
+    "gambar": [
+      "/foto/wisata buatan/kebun raya/kebun raya 1.png",
+      "/foto/wisata buatan/kebun raya/kebun raya 2.png",
+      "/foto/wisata buatan/kebun raya/kebun raya 3.png",
+      "/foto/wisata buatan/kebun raya/kebun raya 4.png",
+      "/foto/wisata buatan/kebun raya/kebun raya 5.png"
+    ],
+    "deskripsi": "Kebun Raya Banua adalah taman botani terbesar di Kalimantan Selatan yang dikelola oleh pemerintah provinsi. Tempat ini memiliki koleksi tanaman endemik dan langka, serta digunakan untuk penelitian, edukasi, dan wisata alam. Suasananya yang asri menjadikannya tempat yang ideal untuk berjalan santai, belajar mengenal tanaman, dan berfoto.",
+    "jam-operasional": "08.00 – 16.00 WITA",
+    "harga-tiket": {
+      "umum": "Gratis"
+    },
+    "fasilitas": [
+      "Koleksi tanaman botani",
+      "Greenhouse",
+      "Taman bermain anak",
+      "Jalur pejalan kaki dan jogging",
+      "Spot edukasi tanaman"
+    ]
+  },
+  "menara-pandang-banjarmasin": {
+    "nama": "Menara Pandang Banjarmasin",
+    "lokasi": "Siring, Jalan Kapten Pierre Tendean, Banjarmasin, Kalimantan Selatan",
+    "koordinat": [-3.32711, 114.59158],
+    "tumbnail": "/foto/wisata buatan/menara pandang/Menara pandang 1.png",
+    "gambar": [
+      "/foto/wisata buatan/menara pandang/Menara pandang 1.png",
+      "/foto/wisata buatan/menara pandang/Menara pandang 2.png",
+      "/foto/wisata buatan/menara pandang/Menara pandang 3.png",
+      "/foto/wisata buatan/menara pandang/Menara pandang 4.png",
+      "/foto/wisata buatan/menara pandang/Menara pandang 5.png"
+    ],
+    "deskripsi": "Salah satu ikon wisata buatan di Kalimantan Selatan yang terletak di kawasan Siring, Jalan Kapten Pierre Tendean, tepat di tepi Sungai Martapura, Banjarmasin. Menara ini menjadi daya tarik utama bagi wisatawan yang ingin menikmati panorama Kota Banjarmasin dari ketinggian. Dengan fasilitas yang terus ditingkatkan, tempat ini menjadi pilihan tepat untuk rekreasi bersama keluarga atau teman. Di sekitar menara, terdapat banyak penjual makanan ringan dan minuman. Kawasan ini juga sering digunakan untuk acara seperti lomba Maulid, Banjarmasin Expo, dan kegiatan sosial lainnya.",
+    "jam-operasional": {
+      "senin-jumat": "10.00–21.00 WITA",
+      "sabtu": "10.00–22.00 WITA",
+      "minggu": "08.00–21.00 WITA"
+    },
+    "harga-tiket": {
+      "umum": "Gratis",
+      "parkir": "Rp2.000"
+    },
+    "fasilitas": [
+      "Lantai 1: Plaza terbuka",
+      "Lantai 2: Galeri Baiman",
+      "Lantai 3: Power King Space",
+      "Lantai 4: Ruang terbuka panorama",
+      "Area kuliner sekitar menara"
+    ]
+  }
+}

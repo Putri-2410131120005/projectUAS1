@@ -148,6 +148,37 @@
       "Jalur pejalan kaki dan jogging",
       "Spot edukasi tanaman"
     ]
+  },
+  "amanah-borneo-park": {
+    "nama": "Amanah Borneo Park",
+    "lokasi": "",
+    "koordinat": [],
+    "tumbnail": "/foto/wisata buatan/kebun raya/kebun raya 3.png",
+    "gambar": [
+      "/foto/wisata buatan/amanah borneo park/amanah borneo 1.png",
+      "/foto/wisata buatan/amanah borneo park/amanah borneo 2.png",
+      "/foto/wisata buatan/amanah borneo park/amanah borneo 3.png",
+      "/foto/wisata buatan/amanah borneo park/amanah borneo 4.png",
+      "/foto/wisata buatan/amanah borneo park/amanah borneo 5.png"
+    ],
+    "deskripsi": "Ingin liburan seru bersama keluarga tanpa harus jauh-jauh ke luar kota? Amanah Borneo Park (ABP) di Banjarbaru adalah jawabannya. Berdiri megah di atas lahan seluas lebih dari 37 hektare, taman rekreasi ini menghadirkan perpaduan sempurna antara hiburan, edukasi, dan nuansa alam. Setiap sudut ABP dirancang untuk menciptakan pengalaman yang berkesan. Mulai dari wahana seru seperti Kereta Gantung, Dino Ride, dan Flying Fox, hingga spot instagramable seperti Rumah Hobbit dan Rumah Terbalik. Anak-anak pun bisa belajar sambil bermain lewat aktivitas seperti memberi makan hewan, memetik buah dan sayuran, atau menjelajah taman kelinci yang menggemaskan. Bagi pecinta alam, Aviary dan kebun tanaman edukatif di ABP menawarkan kesempatan mengenal flora dan fauna dengan cara yang menyenangkan. Tidak ketinggalan, Splash Park jadi favorit keluarga untuk bermain air dan melepaskan penat di tengah cuaca tropis Kalimantan.",
+    "jam-operasional": "09.00 – 17.00 WITA",
+    "harga-tiket": {
+      "Tiket masuk reguler": "Mulai dari Rp30.000 hingga Rp85.000, tergantung pada hari dan paket yang dipilih.",
+      "Tiket terusan": ": Mencakup akses ke berbagai wahana seperti rumah hobbit, taman kelinci, flying fox, dan lainnya."
+    },
+    "fasilitas": [
+      "Kereta gantung",
+      "Dino Ride & Dino Dokar",
+      "Prau Adventure",
+      "Flying Fox & Sepeda Udara",
+      "Rumah Terbalik & Rumah Hobbit",
+      "Aviary",
+      "Taman Kelinci",
+      "Feeding Animals",
+      "Wisata Petik Buah dan Sayur",
+      "Splash Park"
+    ]
   }
   
 }
