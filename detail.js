@@ -58,7 +58,7 @@ function submitReview() {
   selectedRating = 0;
   updateStarDisplay();
 }
-
+// bertugas menampilkan seluruh ulasan dalam bentuk elemen HTML yang terdiri dari nilai rating dan isi komentar. Jika belum ada ulasan sama sekali, akan muncul tulisan “Belum ada ulasan.”
 function renderReviews() {
   const container = document.getElementById('review-list');
   container.innerHTML = '';
@@ -82,7 +82,7 @@ function renderReviews() {
 }
 
 // Fungsi membuat bintang klikable
-function setupStars() {
+function setupStars() { //membuat lima elemen bintang yang bisa diklik. Ketika bintang diklik, rating yang dipilih disimpan dan warna bintang diperbarui oleh updateStarDisplay()
   const starContainer = document.getElementById('user-stars');
   for (let i = 1; i <= 5; i++) {
     const star = document.createElement('span');
@@ -97,7 +97,7 @@ function setupStars() {
   }
 }
 
-// Update warna bintang sesuai nilai yang dipilih
+// Update warna bintang sesuai nilai yang dipilih — bintang yang aktif berwarna kuning (#f4c150) dan sisanya abu-abu (#ccc).
 function updateStarDisplay() {
   const stars = document.querySelectorAll('#user-stars .star');
   stars.forEach(star => {
