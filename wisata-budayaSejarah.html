@@ -10,11 +10,14 @@
   <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3b5998; color: white">
-      <div class="container-fluid">
-        <a href="#"><img src="/z-instagram.png" alt="Logo" style="height: 40px; width: auto" class="me-2 p-2 rounded-circle"></a>
-        <a href="#"><img src="/z-facebook.png" alt="Logo" style="height: 40px; width: auto" class="me-2 p-2 rounded-circle"></a>
-        <a href="#"><img src="/z-youtube.png" alt="Logo" style="height: 40px; width: auto" class="me-2 p-2 rounded-circle"></a>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3b5998; color: white;">
+    <div class="container-fluid">
+      <a href="https://www.instagram.com/visit_kalsel_new?igsh=bWttenV5MDU4cmJ2"><img src="/z-instagram.png" alt="Logo" style="height: 40px; width: auto;"
+          class="me-2 p-2 rounded-circle"></a>
+      <a href="https://facebook.com/WisataKalimantanOfficial"><img src="/z-facebook.png" alt="Logo" style="height: 40px; width: auto;"
+          class="me-2 p-2 rounded-circle"></a>
+      <a href="https://youtube.com/@wisatakalimantan?feature=shared"><img src="/z-youtube.png" alt="Logo" style="height: 40px; width: auto;"
+          class="me-2 p-2 rounded-circle"></a>
         <p class="navbar-brand fw-bold pt-3">Jelajah Banua</p>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,13 +43,13 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Tour Guide</a>
+              <a class="nav-link" href="/htmlnya.html">Tour Guide</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Tentang Kami</a>
+              <a class="nav-link" href="/tentangkami.html">Tentang Kami</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Hubungi Kami</a>
+              <a class="nav-link" href="/hubungi.html">Hubungi Kami</a>
             </li>
           </ul>
         </div>
@@ -63,6 +66,7 @@
     </div>
 
     <!-- Footer -->
+     <!-- Footer -->
     <footer class="text-light pt-5 pb-3" style="background-color: #3b5998;">
       <div class="container">
         <div class="row gy-4">
@@ -73,11 +77,22 @@
           <div class="col-md-4">
             <h3 class="text-warning fs-5 mb-2">Navigasi</h3>
             <ul class="list-unstyled">
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Beranda</a></li>
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Destinasi Wisata</a></li>
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Tour Guide</a></li>
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Tentang Kami</a></li>
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Hubungi Kami</a></li>
+              <li class="mb-2"><a href="/homepage.html" class="text-light text-decoration-none">Beranda</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="wisataDropdown" role="button" data-bs-toggle="dropdown">Wisata</a>
+                <ul class="dropdown-menu" aria-labelledby="wisataDropdown">
+                  <li><a class="dropdown-item" href="/wisata-alam.html">Wisata Alam</a></li>
+                  <li><a class="dropdown-item" href="/wisata-religi.html">Wisata Religi</a></li>
+                  <li><a class="dropdown-item" href="/wisata-edukasi.html">Wisata Edukasi</a></li>
+                  <li><a class="dropdown-item" href="/wisata-buatan.html">Wisata Buatan</a></li>
+                  <li><a class="dropdown-item" href="/wisata-budayaSejarah.html">Wisata Budaya & Sejarah</a></li>
+                  <li><a class="dropdown-item" href="/wisata-pertualangan.html">Wisata Petualangan</a></li>
+                  <li><a class="dropdown-item" href="/wisata-kuliner.html">Wisata Kuliner</a></li>
+                </ul>
+              </li>
+              <li class="mb-2"><a href="/htmlnya.html" class="text-light text-decoration-none">Tour Guide</a></li>
+              <li class="mb-2"><a href="/tentangkami.html" class="text-light text-decoration-none">Tentang Kami</a></li>
+              <li class="mb-2"><a href="/hubungi.html" class="text-light text-decoration-none">Hubungi Kami</a></li>
             </ul>
           </div>
           <div class="col-md-4">
@@ -86,7 +101,6 @@
             <p class="mb-2">Telepon: +62 815 2151 9244</p>
           </div>
         </div>
-
         <div class="text-center border-top border-secondary pt-3 mt-4 text-light small">
           © 2025 Jelajah Banua. All right reserved. |
           <a href="#" class="text-decoration-none text-light">Kebijakan Privasi</a> |
@@ -94,6 +108,7 @@
         </div>
       </div>
     </footer>
+   
 
     <!-- Script untuk memuat data JSON -->
     <script>

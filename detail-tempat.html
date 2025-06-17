@@ -1,70 +1,155 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Jelajah Banua</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-      #map {
-        height: 400px;
-        border-radius: 10px;
-        overflow: hidden;
-        border: 2px solid #ccc;
-        margin-top: 20px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <title>Jelajah Banua</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-      #daftarKomentar {
-        max-height: 200px;
-        overflow-y: auto;
-      }
+  <style>
+    #map {
+      height: 400px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 2px solid #ccc;
+      margin-top: 20px;
+    }
 
-      #daftarKomentar p {
-        border-bottom: 1px dashed #ccc;
-        padding-bottom: 6px;
-        margin-bottom: 6px;
-      }
+    #daftarKomentar {
+      max-height: 200px;
+      overflow-y: auto;
+    }
 
-      #daftarKomentar p:last-child {
-        border-bottom: none;
-      }
+    #daftarKomentar p {
+      border-bottom: 1px dashed #ccc;
+      padding-bottom: 6px;
+      margin-bottom: 6px;
+    }
 
-      .bintang {
-        font-size: 30px;
-        cursor: pointer;
-        color: gray;
-        transition: color 0.2s;
-      }
+    #daftarKomentar p:last-child {
+      border-bottom: none;
+    }
 
-      .bintang.hovered, .bintang.aktif {
-        color: gold;
-      }
-    </style>
-  </head>
+    .bintang {
+      font-size: 30px;
+      cursor: pointer;
+      color: gray;
+      transition: color 0.2s;
+    }
 
-  <body style="background-color: #e6f0ff;">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #3b5998;">
-      <div class="container-fluid">
-        <a href="#"><img src="/z-instagram.png" alt="Logo" class="me-2 p-2 rounded-circle" style="height: 40px;"></a>
-        <a href="#"><img src="/z-facebook.png" alt="Logo" class="me-2 p-2 rounded-circle" style="height: 40px;"></a>
-        <a href="#"><img src="/z-youtube.png" alt="Logo" class="me-2 p-2 rounded-circle" style="height: 40px;"></a>
-        <p class="navbar-brand fw-bold pt-3">Jelajah Banua</p>
+    .bintang.hovered,
+    .bintang.aktif {
+      color: gold;
+    }
+  </style>
+</head>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<body style="background-color: #e6f0ff;">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3b5998; color: white;">
+    <div class="container-fluid">
+      <a href="https://www.instagram.com/visit_kalsel_new?igsh=bWttenV5MDU4cmJ2"><img src="/z-instagram.png" alt="Logo" style="height: 40px; width: auto;"
+          class="me-2 p-2 rounded-circle"></a>
+      <a href="https://facebook.com/WisataKalimantanOfficial"><img src="/z-facebook.png" alt="Logo" style="height: 40px; width: auto;"
+          class="me-2 p-2 rounded-circle"></a>
+      <a href="https://youtube.com/@wisatakalimantan?feature=shared"><img src="/z-youtube.png" alt="Logo" style="height: 40px; width: auto;"
+          class="me-2 p-2 rounded-circle"></a>
+      <p class="navbar-brand fw-bold pt-3">Jelajah Banua</p>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="/homepage.html">Beranda</a></li>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="/homepage.html">Beranda</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="wisataDropdown" role="button" data-bs-toggle="dropdown">
+              Wisata
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/wisata-alam.html">Wisata Alam</a></li>
+              <li><a class="dropdown-item" href="/wisata-religi.html">Wisata Religi</a></li>
+              <li><a class="dropdown-item" href="/wisata-edukasi.html">Wisata Edukasi</a></li>
+              <li><a class="dropdown-item" href="/wisata-buatan.html">Wisata Buatan</a></li>
+              <li><a class="dropdown-item" href="/wisata-budayaSejarah.html">Wisata Budaya & Sejarah</a></li>
+              <li><a class="dropdown-item" href="/wisata-pertualangan.html">Wisata Petualangan</a></li>
+              <li><a class="dropdown-item" href="/wisata-kuliner.html">Wisata Kuliner</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Tour Guide</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Hubungi Kami</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Konten Utama -->
+  <div class="container my-5 bg-white p-4 rounded shadow">
+    <h2 id="nama-tempat" class="text-center text-black mb-4"></h2>
+    <div class="d-flex flex-wrap justify-content-center gap-4">
+      <!-- Lokasi -->
+      <div class="bg-light p-3 border-start border-5 border-primary rounded" style="flex: 1; max-width: 700px;">
+        <div id="lokasi-tempat" class="fw-medium mb-2"><strong>Location:</strong><br></div>
+
+        <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+          <label class="form-label w-100 fw-bold">Masukkan Nama Tempat Awal:</label>
+          <input type="text" id="startPoint" placeholder="Contoh: Banjarmasin" class="form-control">
+          <button onclick="updateRoute()" class="btn btn-primary">Tampilkan Rute</button>
+        </div>
+
+        <div id="distance" class="fst-italic text-muted mb-3">Jarak Tempuh: - | Waktu Tempuh: -</div>
+
+        <div id="map"></div>
+      </div>
+
+      <!-- Card komentar dan rating -->
+      <div class="bg-white p-3 border border-primary rounded shadow vh-25" style="width: 320px; max-width: 400px;">
+        <h3>Kolom Komentar</h3>
+
+        <!--Form Login -->
+        <input id="email" type="email" placeholder="Email" class="form-control mb-2">
+        <input id="password" type="password" placeholder="Password" class="form-control mb-2">
+        <button id="btnLogin" class="btn btn-success mb-2">Login</button>
+        <button id="btnRegister" class="btn btn-secondary mb-2">Daftar</button>
+        <button id="btnLogout" class="btn btn-danger mb-3 d-none">Logout</button>
+        <p id="statusLogin" class="text-muted">Silakan login untuk memberi komentar.</p>
+
+        <p class="fw-bold">Beri Rating:</p>
+        <div id="bintang-container">
+          <span class="bintang" data-nilai="1">★</span>
+          <span class="bintang" data-nilai="2">★</span>
+          <span class="bintang" data-nilai="3">★</span>
+          <span class="bintang" data-nilai="4">★</span>
+          <span class="bintang" data-nilai="5">★</span>
+        </div>
+        <p id="info">Klik bintang untuk memberikan rating</p>
+
+        <textarea id="komentar" class="form-control mt-3" placeholder="Tulis komentarmu di sini..." rows="3"></textarea>
+        <button id="kirimKomentar" class="btn btn-primary mt-3">Kirim Komentar</button>
+        <div id="daftarKomentar" class="mt-3">Belum ada komentar.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-light pt-5 pb-3" style="background-color: #3b5998;">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <h3 class="text-warning fs-5 mb-2">Jelajah Banua</h3>
+          <p class="mb-0">Portal Wisata Digital Kalimantan Selatan</p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="text-warning fs-5 mb-2">Navigasi</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="/homepage.html" class="text-light text-decoration-none">Beranda</a></li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="wisataDropdown" role="button" data-bs-toggle="dropdown">
-                Wisata
-              </a>
-              <ul class="dropdown-menu">
+              <a class="nav-link dropdown-toggle" href="#" id="wisataDropdown" role="button"
+                data-bs-toggle="dropdown">Wisata</a>
+              <ul class="dropdown-menu" aria-labelledby="wisataDropdown">
                 <li><a class="dropdown-item" href="/wisata-alam.html">Wisata Alam</a></li>
                 <li><a class="dropdown-item" href="/wisata-religi.html">Wisata Religi</a></li>
                 <li><a class="dropdown-item" href="/wisata-edukasi.html">Wisata Edukasi</a></li>
@@ -74,106 +159,38 @@
                 <li><a class="dropdown-item" href="/wisata-kuliner.html">Wisata Kuliner</a></li>
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Tour Guide</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Tentang Kami</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Hubungi Kami</a></li>
+            <li class="mb-2"><a href="/htmlnya.html" class="text-light text-decoration-none">Tour Guide</a></li>
+            <li class="mb-2"><a href="/tentangkami.html" class="text-light text-decoration-none">Tentang Kami</a></li>
+            <li class="mb-2"><a href="/hubungi.html" class="text-light text-decoration-none">Hubungi Kami</a></li>
           </ul>
         </div>
+        <div class="col-md-4">
+          <h3 class="text-warning fs-5 mb-2">Kontak</h3>
+          <p class="mb-1">Email: info@jelajahbanua.com</p>
+          <p class="mb-2">Telepon: +62 815 2151 9244</p>
+        </div>
       </div>
-    </nav>
-
-    <!-- Konten Utama -->
-    <div class="container my-5 bg-white p-4 rounded shadow">
-      <h2 id="nama-tempat" class="text-center text-black mb-4"></h2>
-      <div class="d-flex flex-wrap justify-content-center gap-4">
-        <!-- Lokasi -->
-        <div class="bg-light p-3 border-start border-5 border-primary rounded" style="flex: 1; max-width: 700px;">
-          <div id="lokasi-tempat" class="fw-medium mb-2"><strong>Location:</strong><br></div>
-
-          <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
-            <label class="form-label w-100 fw-bold">Masukkan Nama Tempat Awal:</label>
-            <input type="text" id="startPoint" placeholder="Contoh: Banjarmasin" class="form-control">
-            <button onclick="updateRoute()" class="btn btn-primary">Tampilkan Rute</button>
-          </div>
-
-          <div id="distance" class="fst-italic text-muted mb-3">Jarak Tempuh: - | Waktu Tempuh: -</div>
-
-          <div id="map"></div>
-        </div>
-
-        <!-- Card komentar dan rating -->
-        <div class="bg-white p-3 border border-primary rounded shadow vh-25" style="width: 320px; max-width: 400px;">
-          <h3>Kolom Komentar</h3>
-
-          <!--Form Login -->
-          <input id="email" type="email" placeholder="Email" class="form-control mb-2">
-          <input id="password" type="password" placeholder="Password" class="form-control mb-2">
-          <button id="btnLogin" class="btn btn-success mb-2">Login</button>
-          <button id="btnRegister" class="btn btn-secondary mb-2">Daftar</button>
-          <button id="btnLogout" class="btn btn-danger mb-3 d-none">Logout</button>
-          <p id="statusLogin" class="text-muted">Silakan login untuk memberi komentar.</p>
-
-          <p class="fw-bold">Beri Rating:</p>
-          <div id="bintang-container">
-            <span class="bintang" data-nilai="1">★</span>
-            <span class="bintang" data-nilai="2">★</span>
-            <span class="bintang" data-nilai="3">★</span>
-            <span class="bintang" data-nilai="4">★</span>
-            <span class="bintang" data-nilai="5">★</span>
-          </div>
-          <p id="info">Klik bintang untuk memberikan rating</p>
-
-          <textarea id="komentar" class="form-control mt-3" placeholder="Tulis komentarmu di sini..." rows="3"></textarea>
-          <button id="kirimKomentar" class="btn btn-primary mt-3">Kirim Komentar</button>
-          <div id="daftarKomentar" class="mt-3">Belum ada komentar.</div>
-        </div>
+      <div class="text-center border-top border-secondary pt-3 mt-4 text-light small">
+        © 2025 Jelajah Banua. All right reserved. |
+        <a href="#" class="text-decoration-none text-light">Kebijakan Privasi</a> |
+        <a href="#" class="text-decoration-none text-light">Syarat & Ketentuan</a>
       </div>
     </div>
+  </footer>
 
-    <!-- Footer -->
-    <footer class="text-light pt-5 pb-3" style="background-color: #3b5998;">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-md-4">
-            <h3 class="text-warning fs-5 mb-2">Jelajah Banua</h3>
-            <p class="mb-0">Portal Wisata Digital Kalimantan Selatan</p>
-          </div>
-          <div class="col-md-4">
-            <h3 class="text-warning fs-5 mb-2">Navigasi</h3>
-            <ul class="list-unstyled">
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Beranda</a></li>
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Destinasi Wisata</a></li>
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Tour Guide</a></li>
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Tentang Kami</a></li>
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Hubungi Kami</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h3 class="text-warning fs-5 mb-2">Kontak</h3>
-            <p class="mb-1">Email: info@jelajahbanua.com</p>
-            <p class="mb-2">Telepon: +62 815 2151 9244</p>
-          </div>
-        </div>
+  <!-- Script -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script> <!--js map-->
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+  <!--buat login/daftar beri komen dan rating-->
 
-        <div class="text-center border-top border-secondary pt-3 mt-4 text-light small">
-          © 2025 Jelajah Banua. All right reserved. |
-          <a href="#" class="text-decoration-none text-light">Kebijakan Privasi</a> |
-          <a href="#" class="text-decoration-none text-light">Syarat & Ketentuan</a>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Script -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script> <!--js map-->
-    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script> <!--buat login/daftar beri komen dan rating-->
-
-    <script type="module" src="detail-tempat.js"></script>
+  <script type="module" src="detail-tempat.js"></script>
 
 
 
-  </body>
+</body>
+
 </html>

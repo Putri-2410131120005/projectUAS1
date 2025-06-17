@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hasil Pencarian - Jelajah Banua</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #eef2ff;
+    }
+
+    .card {
+      margin-bottom: 20px;
+    }
+
+    .thumbnail {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container py-5">
+    <h2 class="mb-4">Hasil Pencarian</h2>
+    <div id="hasilContainer" class="row g-4">
+      <!-- Hasil pencarian muncul di sini -->
+    </div>
+  </div>
+
+  <script>
+    // Ambil parameter dari URL
+    const params = new URLSearchParams(window.location.search);
+    const keyword = params.get("search")?.toLowerCase() || "";
+
+    // Tempat menyimpan hasil
+    const hasilContainer = document.getElementById("hasilContainer");
+
+    // Daftar file JSON kategori (kamu bisa tambah kalau ada kategori baru)
+    const files = [
+      "tempat-alam.json",
+      "tempat-religi.json",
+      "tempat-edukasi.json",
+      "tempat-budaya.json",
+      "tempat-buatan.json",
+      "tempat-kuliner.json",
+      "tempat-pertualangan.json"
+    ];
+
+    // Fungsi cari data
+    async function cariData() {
+      let hasilDitemukan = [];
+
+      for (const file of files) {
+        try {
+          const res = await fetch(file);
+          const data = await res.json();
+
+          // Format object {id: {...}} → array
+          const objekArray = Object.entries(data);
+
+          for (const [id, tempat] of objekArray) {
+            const nama = tempat.nama?.toLowerCase() || "";
+            const deskripsi = tempat.deskripsi?.toLowerCase() || "";
+
+            if (nama.includes(keyword) || deskripsi.includes(keyword)) {
+              hasilDitemukan.push({ id, ...tempat });
+            }
+          }
+        } catch (err) {
+          console.error("Gagal memuat:", file, err);
+        }
+      }
+
+      tampilkanHasil(hasilDitemukan);
+    }
+
+    // Fungsi tampilkan ke halaman
+    function tampilkanHasil(data) {
+      if (data.length === 0) {
+        hasilContainer.innerHTML = "<p>Tidak ada hasil ditemukan untuk kata kunci tersebut.</p>";
+        return;
+      }
+
+      data.forEach(tempat => {
+        const card = document.createElement("div");
+        card.className = "col-md-4";
+        card.innerHTML = `
+          <div class="card shadow-sm">
+            <img src="${tempat.tumbnail}" class="card-img-top thumbnail" alt="${tempat.nama}">
+            <div class="card-body">
+              <h5 class="card-title">${tempat.nama}</h5>
+              <p class="card-text">${tempat.deskripsi.substring(0, 100)}...</p>
+              <a href="detail1.html?id=${tempat.id}" class="btn btn-primary">Lihat Detail</a>
+            </div>
+          </div>
+        `;
+        hasilContainer.appendChild(card);
+      });
+    }
+
+    cariData();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

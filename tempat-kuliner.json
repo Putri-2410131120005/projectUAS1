@@ -1,1 +1,51 @@
-{}
+{
+  "pasar-terapung-lok-baintan": {
+    "nama": "Pasar Terapung Lok Baintan",
+    "lokasi": "Desa Sungai Pinang, Kecamatan Sungai Tabuk, Kabupaten Banjar, Kalimantan Selatan",
+    "koordinat": [-3.3725, 114.6683],
+    "tumbnail": "foto/wisata kuliner/pasar terapung/pasar terapung 3.jpg",
+    "gambar": [
+      "foto/wisata kuliner/pasar terapung/pasar terapung 1.jpg",
+      "foto/wisata kuliner/pasar terapung/pasar terapung 2.jpg",
+      "foto/wisata kuliner/pasar terapung/pasar terapung 3.jpg"
+    ],
+    "deskripsi": "Pasar Terapung Lok Baintan adalah pasar tradisional yang berlangsung di atas perahu-perahu kecil (jukung) di Sungai Martapura, tepatnya di Desa Sungai Pinang, Kecamatan Sungai Tabuk. Pasar ini telah ada sejak abad ke-18 dan menjadi bagian penting dari kehidupan masyarakat setempat. Transaksi dilakukan langsung di atas perahu, dengan suasana khas dan unik, serta masih menerapkan sistem barter (bapanduk).",
+    "jam-operasional": "05.00 – 09.30 WITA",
+    "harga-tiket": {
+      "umum": "Gratis"
+    },
+    "fasilitas": [
+      "Area parkir",
+      "Toilet umum",
+      "Mushola",
+      "Warung makan",
+      "Spot foto",
+      "Penyewaan perahu (kelotok)"
+    ]
+  },
+
+  "warung-soto-banjar-bang-amat": {
+    "nama": "Warung Soto Banjar Bang Amat",
+    "lokasi": "Jl. Banua Anyar, Banjarmasin, Kalimantan Selatan (Tepi Sungai Martapura)",
+    "koordinat": [-3.3096, 114.6093],
+    "tumbnail": "foto/wisata kuliner/soto bang amat/soto bang amat 2.jpg",
+    "gambar": [
+      "foto/wisata kuliner/soto bang amat/soto bang amat 2.jpg",
+      "foto/wisata kuliner/soto bang amat/soto bang amat 3.jpg",
+      "foto/wisata kuliner/soto bang amat/soto bang amat 1.jpg"
+    ],
+    "deskripsi": "Soto Banjar Bang Amat adalah destinasi kuliner legendaris di Banjarmasin yang menyajikan Soto Banjar autentik dengan cita rasa khas. Berdiri sejak tahun 2002 di tepi Sungai Martapura, tempat ini menawarkan sensasi bersantap dengan pemandangan sungai serta iringan musik tradisional. Menu andalannya menggunakan kaldu ayam kaya rempah dan disajikan dengan ketupat serta suwiran ayam kampung.",
+    "jam-operasional": "07.30 – 16.30 WITA (jumat tutup)",
+    "harga-tiket": {
+      "umum": "Gratis (bayar sesuai menu yang dipesan)"
+    },
+    "fasilitas": [
+      "Area parkir",
+      "Toilet umum",
+      "Gazebo lesehan di tepi sungai",
+      "Panggung hiburan musik tradisional",
+      "Penyewaan perahu (kelotok)"
+    ]
+    }
+    }
+

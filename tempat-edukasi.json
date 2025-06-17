@@ -1,5 +1,5 @@
 {
-    "kebun-raya-banua": {
+  "kebun-raya-banua": {
     "nama": "Kebun Raya Banua",
     "lokasi": "Jalan Aneka Tambang, Banjarbaru, Kalimantan Selatan",
     "koordinat": [-3.49703, 114.81785],
@@ -52,6 +52,182 @@
       "Lantai 3: Power King Space",
       "Lantai 4: Ruang terbuka panorama",
       "Area kuliner sekitar menara"
+    ]
+  },
+
+  "edupark-rusa-sambar": {
+    "nama": "Edupark Rusa Sambar",
+    "lokasi": "Desa Asam-Asam, Kecamatan Jorong, Kabupaten Tanah Laut, Kalimantan Selatan",
+    "koordinat": [-3.96296, 114.58253],
+    "tumbnail": "/foto/wisata buatan/edupark rusa sambar/edupark rusa sambar 2.png",
+    "gambar": [
+      "/foto/wisata buatan/edupark rusa sambar/edupark rusa sambar 1.png",
+      "/foto/wisata buatan/edupark rusa sambar/edupark rusa sambar 2.png"
+    ],
+    "deskripsi": "Edupark Rusa Sambar merupakan taman konservasi rusa yang dibuka untuk umum dan bertujuan sebagai sarana edukasi tentang satwa. Terletak di lingkungan PLTU Asam-Asam, taman ini dihuni oleh rusa sambar (Cervus unicolor) yang merupakan spesies langka dan dilindungi. Pengunjung dapat berinteraksi langsung dan memberi makan rusa dalam kandang terbuka.",
+    "jam-operasional": "08.00 – 16.00 WITA",
+    "harga-tiket": {
+      "umum": "Gratis"
+    },
+    "fasilitas": [
+      "Kandang rusa terbuka",
+      "Pusat edukasi satwa",
+      "Jalur pejalan kaki",
+      "Spot foto alami"
+    ]
+    },
+
+  "museum-wasaka": {
+    "nama": "Museum Wasaka",
+    "lokasi": "Jl. Kampung Kenanga, Banjarmasin, Kalimantan Selatan",
+    "koordinat": [-3.3009, 114.6017],
+    "tumbnail": "/foto/wisata budaya dan sejarah/museum wasaka/museum wasaka 1.jpg",
+    "gambar": [
+      "/foto/wisata budaya dan sejarah/museum wasaka/museum wasaka 1.jpg",
+      "/foto/wisata budaya dan sejarah/museum wasaka/museum wasaka 2.jpg",
+      "/foto/wisata budaya dan sejarah/museum wasaka/museum wasaka 3.jpg",
+      "/foto/wisata budaya dan sejarah/museum wasaka/museum wasaka 4.jpg"
+    ],
+    "deskripsi": "Museum Wasaka menyimpan lebih dari 400 koleksi benda bersejarah yang menjadi saksi bisu perjuangan rakyat Kalimantan Selatan melawan penjajah. Koleksi tersebut mencakup senjata tradisional, pakaian barajah, mesin ketik, kamera, dan sepeda tua. Terdapat juga teks proklamasi serta replika pembuatan senjata dan patung pembuatnya.",
+    "jam-operasional": "Selasa – Kamis: 09.00 – 12.00 & 13.30 – 15.00 WITA; Jumat: 09.00 – 11.00 WITA; Sabtu – Minggu: 09.00 – 12.30 WITA; Senin & hari libur: Tutup",
+    "harga-tiket": {
+      "umum": "Gratis",
+      "parkir": {
+        "sepeda-motor": "Rp3.000",
+        "mobil": "Rp5.000"
+      }
+    },
+    "fasilitas": [
+      "Area parkir",
+      "Toilet umum",
+      "Pusat informasi",
+      "Ruang pamer tetap",
+      "Ruang penyimpanan koleksi"
+    ]
+    },
+
+  "museum-lambung-mangkurat": {
+    "nama": "Museum Lambung Mangkurat",
+    "lokasi": "Jl. Ahmad Yani km 36, Banjarbaru, Kalimantan Selatan",
+    "koordinat": [-3.4425, 114.8453],
+    "tumbnail": "/foto/wisata budaya dan sejarah/museum lambung mangkurat/lambung mangkurat 1.jpg",
+    "gambar": [
+      "/foto/wisata budaya dan sejarah/museum lambung mangkurat/lambung mangkurat 1.jpg",
+      "/foto/wisata budaya dan sejarah/museum lambung mangkurat/lambung mangkurat 2.jpg",
+      "/foto/wisata budaya dan sejarah/museum lambung mangkurat/lambung mangkurat 3.jpg",
+      "/foto/wisata budaya dan sejarah/museum lambung mangkurat/lambung mangkurat 4.jpg"
+    ],
+    "deskripsi": "Diresmikan pada 10 Januari 1979, Museum Lambung Mangkurat berdiri dengan arsitektur rumah adat Banjar. Menyimpan lebih dari 12.000 koleksi di bidang arkeologi, etnografi, geologi, biologi, dan seni rupa. Termasuk manuskrip Al-Qur’an tulisan tangan Syekh Muhammad Arsyad Al-Banjari dan fosil gajah purba.",
+    "jam-operasional": "Senin – Kamis: 08.00 – 16.00 WITA; Jumat: 08.30 – 11.00 WITA; Sabtu: 08.30 – 15.30 WITA; Minggu & Hari Libur Nasional: Tutup",
+    "harga-tiket": {
+      "dewasa": "Rp5.000",
+      "anak-anak": "Rp3.000",
+      "rombongan-dewasa": "Rp2.000",
+      "rombongan-anak": "Rp2.000",
+      "mancanegara": "Rp10.000"
+    },
+    "fasilitas": [
+      "Ruang Pra-Sejarah",
+      "Ruang Sejarah",
+      "Ruang Etnografi",
+      "Ruang Geologi dan Biologi",
+      "Ruang Seni Rupa",
+      "Ruang pameran tetap",
+      "Ruang pameran temporer",
+      "Auditorium",
+      "Area parkir",
+      "Toilet umum",
+      "Toko suvenir",
+      "Tempat duduk"
+    ]
+    },
+  "taman-pintar-banjarbaru": {
+    "nama": "Taman Pintar Banjarbaru",
+    "lokasi": "Jalan Pangeran Suriansyah, Loktabat Utara, Kota Banjarbaru, Kalimantan Selatan",
+    "koordinat": [-3.43745, 114.83120],
+    "tumbnail": "/foto/wisata buatan/taman pintar/taman pintar 4.png",
+    "gambar": [
+      "/foto/wisata buatan/taman pintar/taman pintar 1.png",
+      "/foto/wisata buatan/taman pintar/taman pintar 2.png",
+      "/foto/wisata buatan/taman pintar/taman pintar 3.png",
+      "/foto/wisata buatan/taman pintar/taman pintar 4.png",
+      "/foto/wisata buatan/taman pintar/taman pintar 5.png"
+    ],
+    "deskripsi": "Taman Pintar Banjarbaru adalah ruang terbuka publik yang ramah anak dan keluarga. Dirancang sebagai taman edukasi, tempat ini dilengkapi dengan berbagai alat permainan dan peraga sains sederhana yang mendorong pengunjung untuk belajar sambil bermain. Tempat ini cocok untuk rekreasi sekaligus menambah wawasan.",
+    "jam-operasional": "08.00 – 18.00 WITA",
+    "harga-tiket": {
+      "umum": "Gratis"
+    },
+    "fasilitas": [
+      "Alat permainan edukatif",
+      "Ruang baca",
+      "Area bermain anak",
+      "Toilet dan tempat duduk"
+    ]
+    },
+
+  "taman-hutan-raya-sultan-adam": {
+    "nama": "Taman Hutan Raya Sultan Adam - Wisata Alam Pegunungan",
+    "lokasi": "Pegunungan Meratus, Kalimantan Selatan",
+    "koordinat": [-3.4850, 114.8660],
+    "tumbnail": "foto/wisata alam/tahura/tahura 1.jpg",
+    "gambar": [
+      "foto/wisata alam/tahura/tahura 2.jpg",
+      "foto/wisata alam/tahura/tahura 3.jpg",
+      "foto/wisata alam/tahura/tahura 4.jpg"
+    ],
+    "deskripsi": "Bayangkan berada di tengah hijaunya Pegunungan Meratus, di mana kabut pagi menyelimuti hutan tropis dan suara burung liar jadi pengantar perjalananmu. Taman Hutan Raya Sultan Adam bukan sekadar hutan, tapi surga petualangan dan napak tilas sejarah, tempat di mana alam liar dan warisan budaya berpadu indah. Terhampar seluas 112.000 hektar, Tahura Sultan Adam menyuguhkan pengalaman luar biasa: berenang di Kolam Belanda yang jernih alami, mendaki menuju Benteng kolonial di atas bukit, menyusuri air terjun tersembunyi, hingga bersantai menikmati panorama eksotis dari Bukit Tirai Hujan. Bagi pecinta edukasi, kawasan ini juga punya penangkaran satwa langka seperti owa dan beruang madu, serta arboretum penuh keanekaragaman hayati Kalimantan. Bagi pengunjung yang ingin lebih dari sekadar piknik, Tahura menawarkan glamping, camping ground, dan spot foto alam terbaik yang siap memenuhi feed Instagram-mu. Lokasinya mudah dijangkau dari Banjarbaru atau Banjarmasin, cocok untuk liburan singkat maupun ekspedisi alam yang lebih mendalam.",
+    "jam-operasional": {
+      "minggu-kamis": "06.00 – 16.00 WITA",
+      "jumat-sabtu": "06.00 – 00.00 WITA"
+    },
+    "harga-tiket": {
+      "dewasa": "Rp12.000",
+      "anak-anak": "Rp10.000",
+      "camping": "Rp6.000 per orang",
+      "parkir-motor": "Rp10.000",
+      "parkir-mobil": "Rp25.000"
+    },
+    "fasilitas": [
+      "Kolam Belanda",
+      "Benteng Belanda",
+      "Bukit Tirai Hujan",
+      "Air Terjun",
+      "Penangkaran Satwa",
+      "Agrowisata dan Arboretum",
+      "Wisma Belanda",
+      "Area parkir",
+      "Kamar mandi",
+      "Warung makan",
+      "Arena bermain anak",
+      "Area glamping"
+    ]
+  },
+  "kampung-sasirangan": {
+    "nama": "Kampung Sasirangan",
+    "lokasi": "Seberang Masjid Jami, Jalan Seberang Mesjid, Banjarmasin Tengah, Kota Banjarmasin, Kalimantan Selatan",
+    "koordinat": [-3.3264, 114.5902],
+    "tumbnail": "/foto/wisata budaya dan sejarah/kampung sasirangan/Kampung Sasirangan 2.jpg",
+    "gambar": [
+      "/foto/wisata budaya dan sejarah/kampung sasirangan/Kampung Sasirangan 2.jpg",
+      "/foto/wisata budaya dan sejarah/kampung sasirangan/Kampung Sasirangan 1.jpg",
+      "/foto/wisata budaya dan sejarah/kampung sasirangan/Kampung Sasirangan 3.jpg"
+    ],
+    "deskripsi": "Kampung Sasirangan merupakan pusat produksi dan penjualan kain Sasirangan, kain tradisional khas Kalimantan Selatan yang dibuat dengan teknik ikat celup. Di kampung ini, pengunjung dapat menyaksikan langsung proses pembuatannya dan membeli produk-produk unik dari kain tersebut. Rumah-rumah warga yang dicat warna-warni menciptakan suasana menarik dan Instagramable. Kampung ini telah menjadi ikon wisata budaya Banjarmasin.",
+    "jam-operasional": "Setiap hari, pukul 08.00–22.00 WITA",
+    "harga-tiket": {
+      "umum": "Gratis"
+    },
+    "fasilitas": [
+      "Area parkir",
+      "Toilet umum",
+      "Musholla",
+      "Kios souvenir",
+      "Tempat makan",
+      "Spot foto dan selfie area",
+      "Wi-Fi area",
+      "Homestay",
+      "Paket wisata"
     ]
   }
 }

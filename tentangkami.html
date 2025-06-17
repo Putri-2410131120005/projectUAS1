@@ -11,10 +11,13 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3b5998; color: white;">
-      <div class="container-fluid">
-        <a href="#"><img src="/z-instagram.png" alt="Instagram" style="height: 40px;" class="me-2 p-2 rounded-circle" /></a>
-        <a href="#"><img src="/z-facebook.png" alt="Facebook" style="height: 40px;" class="me-2 p-2 rounded-circle" /></a>
-        <a href="#"><img src="/z-youtube.png" alt="YouTube" style="height: 40px;" class="me-2 p-2 rounded-circle" /></a>
+    <div class="container-fluid">
+      <a href="https://www.instagram.com/visit_kalsel_new?igsh=bWttenV5MDU4cmJ2"><img src="/z-instagram.png" alt="Logo" style="height: 40px; width: auto;"
+          class="me-2 p-2 rounded-circle"></a>
+      <a href="https://facebook.com/WisataKalimantanOfficial"><img src="/z-facebook.png" alt="Logo" style="height: 40px; width: auto;"
+          class="me-2 p-2 rounded-circle"></a>
+      <a href="https://youtube.com/@wisatakalimantan?feature=shared"><img src="/z-youtube.png" alt="Logo" style="height: 40px; width: auto;"
+          class="me-2 p-2 rounded-circle"></a>
         <p class="navbar-brand fw-bold pt-3">Jelajah Banua</p>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,8 +38,8 @@
                 <li><a class="dropdown-item" href="/wisata-kuliner.html">Wisata Kuliner</a></li>
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-link active" href="#">Tentang Kami</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Hubungi Kami</a></li>
+            <li class="nav-item"><a class="nav-link" href="/tentangkami.html">Tentang Kami</a></li>
+            <li class="nav-item"><a class="nav-link" href="/hubungibaru.html">Hubungi Kami</a></li>
           </ul>
         </div>
       </div>
@@ -52,7 +55,7 @@
         <!-- Card 1 -->
         <div class="col-md-4 mb-4">
           <div class="card text-center h-100">
-            <img src="/img-pengembang1.jpg" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px; object-fit: cover;" alt="Pengembang 1">
+            <img src="foto luna.jpeg" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px; object-fit: cover;" alt="Pengembang 1">
             <div class="card-body">
               <h5 class="card-title">Luna Shofa Azzura</h5>
               <p class="card-text">Bertanggung jawab atas desain antarmuka dan pengalaman pengguna pada website Jelajah Banua.</p>
@@ -63,7 +66,7 @@
         <!-- Card 2 -->
         <div class="col-md-4 mb-4">
           <div class="card text-center h-100">
-            <img src="/img-pengembang2.jpg" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px; object-fit: cover;" alt="Pengembang 2">
+            <img src="foto putri.jpeg" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px; object-fit: cover;" alt="Pengembang 2">
             <div class="card-body">
               <h5 class="card-title">Putri Fatimatul Amalia</h5>
               <p class="card-text">Mengembangkan halaman-halaman website dan memastikan semua fungsi berjalan dengan baik di berbagai perangkat.</p>
@@ -74,7 +77,7 @@
         <!-- Card 3 -->
         <div class="col-md-4 mb-4">
           <div class="card text-center h-100">
-            <img src="/img-pengembang3.jpg" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px; object-fit: cover;" alt="Pengembang 3">
+            <img src="foto alya.jpeg" class="card-img-top p-3 rounded-circle mx-auto" style="width: 150px; height: 150px; object-fit: cover;" alt="Pengembang 3">
             <div class="card-body">
               <h5 class="card-title">Alya Aziza Bashirah</h5>
               <p class="card-text">Menyusun konten dan informasi seputar wisata yang menarik dan informatif untuk Jelajah Banua.</p>
@@ -95,11 +98,22 @@
           <div class="col-md-4">
             <h3 class="text-warning fs-5 mb-2">Navigasi</h3>
             <ul class="list-unstyled">
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Beranda</a></li>
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Destinasi Wisata</a></li>
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Tour Guide</a></li>
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Tentang Kami</a></li>
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Hubungi Kami</a></li>
+              <li class="mb-2"><a href="/homepage.html" class="text-light text-decoration-none">Beranda</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="wisataDropdown" role="button" data-bs-toggle="dropdown">Wisata</a>
+                <ul class="dropdown-menu" aria-labelledby="wisataDropdown">
+                  <li><a class="dropdown-item" href="/wisata-alam.html">Wisata Alam</a></li>
+                  <li><a class="dropdown-item" href="/wisata-religi.html">Wisata Religi</a></li>
+                  <li><a class="dropdown-item" href="/wisata-edukasi.html">Wisata Edukasi</a></li>
+                  <li><a class="dropdown-item" href="/wisata-buatan.html">Wisata Buatan</a></li>
+                  <li><a class="dropdown-item" href="/wisata-budayaSejarah.html">Wisata Budaya & Sejarah</a></li>
+                  <li><a class="dropdown-item" href="/wisata-pertualangan.html">Wisata Petualangan</a></li>
+                  <li><a class="dropdown-item" href="/wisata-kuliner.html">Wisata Kuliner</a></li>
+                </ul>
+              </li>
+              <li class="mb-2"><a href="/htmlnya.html" class="text-light text-decoration-none">Tour Guide</a></li>
+              <li class="mb-2"><a href="/tentangkami.html" class="text-light text-decoration-none">Tentang Kami</a></li>
+              <li class="mb-2"><a href="/hubungi.html" class="text-light text-decoration-none">Hubungi Kami</a></li>
             </ul>
           </div>
           <div class="col-md-4">

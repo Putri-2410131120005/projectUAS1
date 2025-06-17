@@ -1,98 +1,110 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wisata Buatan Kalimantan Selatan</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
-    .carousel-item img { height: 500px; width: 100%; }
-    .card { margin-bottom: 2rem; }
+    .carousel-item img {
+      height: 500px;
+      width: 100%;
+    }
+
+    .card {
+      margin-bottom: 2rem;
+    }
+
     .bintang {
       font-size: 24px;
       color: gray;
     }
+
     .bintang.aktif {
       color: gold;
     }
   </style>
 </head>
+
 <body style="background-color: #e6f0ff;">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #3b5998;">
-      <div class="container-fluid">
-        <a href="#"><img src="/z-instagram.png" alt="Logo" class="me-2 p-2 rounded-circle" style="height: 40px;"></a>
-        <a href="#"><img src="/z-facebook.png" alt="Logo" class="me-2 p-2 rounded-circle" style="height: 40px;"></a>
-        <a href="#"><img src="/z-youtube.png" alt="Logo" class="me-2 p-2 rounded-circle" style="height: 40px;"></a>
-        <p class="navbar-brand fw-bold pt-3">Jelajah Banua</p>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3b5998; color: white;">
+    <div class="container-fluid">
+      <a href="https://www.instagram.com/visit_kalsel_new?igsh=bWttenV5MDU4cmJ2"><img src="/z-instagram.png" alt="Logo"
+          style="height: 40px; width: auto;" class="me-2 p-2 rounded-circle"></a>
+      <a href="https://facebook.com/WisataKalimantanOfficial"><img src="/z-facebook.png" alt="Logo"
+          style="height: 40px; width: auto;" class="me-2 p-2 rounded-circle"></a>
+      <a href="https://youtube.com/@wisatakalimantan?feature=shared"><img src="/z-youtube.png" alt="Logo"
+          style="height: 40px; width: auto;" class="me-2 p-2 rounded-circle"></a>
+      <p class="navbar-brand fw-bold pt-3">Jelajah Banua</p>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="/homepage.html">Beranda</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="wisataDropdown" role="button" data-bs-toggle="dropdown">
-                Wisata
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/wisata-alam.html">Wisata Alam</a></li>
-                <li><a class="dropdown-item" href="/wisata-religi.html">Wisata Religi</a></li>
-                <li><a class="dropdown-item" href="/wisata-edukasi.html">Wisata Edukasi</a></li>
-                <li><a class="dropdown-item" href="/wisata-buatan.html">Wisata Buatan</a></li>
-                <li><a class="dropdown-item" href="/wisata-budayaSejarah.html">Wisata Budaya & Sejarah</a></li>
-                <li><a class="dropdown-item" href="/wisata-pertualangan.html">Wisata Petualangan</a></li>
-                <li><a class="dropdown-item" href="/wisata-kuliner.html">Wisata Kuliner</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">Tour Guide</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Tentang Kami</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Hubungi Kami</a></li>
-          </ul>
-        </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="/homepage.html">Beranda</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="wisataDropdown" role="button" data-bs-toggle="dropdown">
+              Wisata
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/wisata-alam.html">Wisata Alam</a></li>
+              <li><a class="dropdown-item" href="/wisata-religi.html">Wisata Religi</a></li>
+              <li><a class="dropdown-item" href="/wisata-edukasi.html">Wisata Edukasi</a></li>
+              <li><a class="dropdown-item" href="/wisata-buatan.html">Wisata Buatan</a></li>
+              <li><a class="dropdown-item" href="/wisata-budayaSejarah.html">Wisata Budaya & Sejarah</a></li>
+              <li><a class="dropdown-item" href="/wisata-pertualangan.html">Wisata Petualangan</a></li>
+              <li><a class="dropdown-item" href="/wisata-kuliner.html">Wisata Kuliner</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Tour Guide</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Hubungi Kami</a></li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
   <div class="container py-5">
     <div id="wisata-container"></div>
   </div>
 
   <footer class="text-light pt-5 pb-3" style="background-color: #3b5998;">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-md-4">
-            <h3 class="text-warning fs-5 mb-2">Jelajah Banua</h3>
-            <p class="mb-0">Portal Wisata Digital Kalimantan Selatan</p>
-          </div>
-          <div class="col-md-4">
-            <h3 class="text-warning fs-5 mb-2">Navigasi</h3>
-            <ul class="list-unstyled">
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Beranda</a></li>
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Destinasi Wisata</a></li>
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Tour Guide</a></li>
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Tentang Kami</a></li>
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Hubungi Kami</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h3 class="text-warning fs-5 mb-2">Kontak</h3>
-            <p class="mb-1">Email: info@jelajahbanua.com</p>
-            <p class="mb-2">Telepon: +62 815 2151 9244</p>
-          </div>
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <h3 class="text-warning fs-5 mb-2">Jelajah Banua</h3>
+          <p class="mb-0">Portal Wisata Digital Kalimantan Selatan</p>
         </div>
-
-        <div class="text-center border-top border-secondary pt-3 mt-4 text-light small">
-          © 2025 Jelajah Banua. All right reserved. |
-          <a href="#" class="text-decoration-none text-light">Kebijakan Privasi</a> |
-          <a href="#" class="text-decoration-none text-light">Syarat & Ketentuan</a>
+        <div class="col-md-4">
+          <h3 class="text-warning fs-5 mb-2">Navigasi</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Beranda</a></li>
+            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Destinasi Wisata</a></li>
+            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Tour Guide</a></li>
+            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Tentang Kami</a></li>
+            <li class="mb-2"><a href="#" class="text-light text-decoration-none">Hubungi Kami</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3 class="text-warning fs-5 mb-2">Kontak</h3>
+          <p class="mb-1">Email: info@jelajahbanua.com</p>
+          <p class="mb-2">Telepon: +62 815 2151 9244</p>
         </div>
       </div>
-    </footer>
+
+      <div class="text-center border-top border-secondary pt-3 mt-4 text-light small">
+        © 2025 Jelajah Banua. All right reserved. |
+        <a href="#" class="text-decoration-none text-light">Kebijakan Privasi</a> |
+        <a href="#" class="text-decoration-none text-light">Syarat & Ketentuan</a>
+      </div>
+    </div>
+  </footer>
 
   <!-- Ambil Data JSON -->
-   <!-- Bootstrap -->
+  <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Firebase -->
@@ -111,36 +123,36 @@
       fetch("tempat-kuliner.json").then(res => res.json()),
       fetch("tempat-pertualangan.json").then(res => res.json())
     ])
-    .then(([alam, religi, edukasi, buatan, budayaSejarah, kuliner, pertualangan]) => {
-      const semuaTempat = { ...alam, ...religi, ...edukasi, ...buatan, ...budayaSejarah, ...kuliner, ...pertualangan };
-      const tempat = semuaTempat[id];
+      .then(([alam, religi, edukasi, buatan, budayaSejarah, kuliner, pertualangan]) => {
+        const semuaTempat = { ...alam, ...religi, ...edukasi, ...buatan, ...budayaSejarah, ...kuliner, ...pertualangan };
+        const tempat = semuaTempat[id];
 
-      const container = document.getElementById("wisata-container");
-      container.innerHTML = "";
+        const container = document.getElementById("wisata-container");
+        container.innerHTML = "";
 
-      if (!tempat) {
-        container.innerHTML = `<div class="alert alert-danger">Tempat wisata tidak ditemukan.</div>`;
-        return;
-      }
+        if (!tempat) {
+          container.innerHTML = `<div class="alert alert-danger">Tempat wisata tidak ditemukan.</div>`;
+          return;
+        }
 
-      const carouselId = `carousel-${id}`;
-      const images = (tempat.gambar || []).map((img, i) => `
+        const carouselId = `carousel-${id}`;
+        const images = (tempat.gambar || []).map((img, i) => `
         <div class="carousel-item${i === 0 ? ' active' : ''}">
-          <img src="${img}" class="d-block w-100" alt="${tempat.nama} ${i+1}">
+          <img src="${img}" class="d-block w-100" alt="${tempat.nama} ${i + 1}">
         </div>
       `).join("");
 
-      const tiket = tempat["harga-tiket"]
-        ? Object.entries(tempat["harga-tiket"]).map(
+        const tiket = tempat["harga-tiket"]
+          ? Object.entries(tempat["harga-tiket"]).map(
             ([jenis, harga]) => `<li>${jenis.replace('_', ' ')}: ${harga}</li>`
           ).join("")
-        : "<li>Informasi tidak tersedia</li>";
+          : "<li>Informasi tidak tersedia</li>";
 
-      const fasilitas = tempat.fasilitas && tempat.fasilitas.length
-        ? tempat.fasilitas.map(f => `<li>${f}</li>`).join("")
-        : "<li>Informasi tidak tersedia</li>";
+        const fasilitas = tempat.fasilitas && tempat.fasilitas.length
+          ? tempat.fasilitas.map(f => `<li>${f}</li>`).join("")
+          : "<li>Informasi tidak tersedia</li>";
 
-      container.innerHTML = `
+        container.innerHTML = `
         <div class="card shadow-sm">
           <div class="card-body">
             <div id="${carouselId}" class="carousel slide mb-3" data-bs-ride="carousel">
@@ -182,37 +194,37 @@
         </div>
       `;
 
-      function tampilkanRating(id) {
-      const db = firebase.database().ref("tempat_wisata/" + id);
-      db.once("value").then(snapshot => {
-        const data = snapshot.val() || { totalNilai: 0, jumlahPenilai: 0 };
-        const rata2 = data.jumlahPenilai === 0 ? 0 : (data.totalNilai / data.jumlahPenilai);
-        const rata2fix = rata2.toFixed(2);
+        function tampilkanRating(id) {
+          const db = firebase.database().ref("tempat_wisata/" + id);
+          db.once("value").then(snapshot => {
+            const data = snapshot.val() || { totalNilai: 0, jumlahPenilai: 0 };
+            const rata2 = data.jumlahPenilai === 0 ? 0 : (data.totalNilai / data.jumlahPenilai);
+            const rata2fix = rata2.toFixed(2);
 
-        const infoRating = document.getElementById("info-rating");
-        const bintangEls = document.querySelectorAll("#bintang-container .bintang");
+            const infoRating = document.getElementById("info-rating");
+            const bintangEls = document.querySelectorAll("#bintang-container .bintang");
 
-        if (infoRating) {
-          infoRating.innerText = `Rating: ${rata2fix} dari ${data.jumlahPenilai} penilai`;
+            if (infoRating) {
+              infoRating.innerText = `Rating: ${rata2fix} dari ${data.jumlahPenilai} penilai`;
+            }
+
+            bintangEls.forEach(el => {
+              const nilai = parseInt(el.dataset.nilai);
+              if (nilai <= Math.floor(rata2)) {
+                el.classList.add("aktif");
+              }
+            });
+          });
         }
-
-        bintangEls.forEach(el => {
-          const nilai = parseInt(el.dataset.nilai);
-          if (nilai <= Math.floor(rata2)) {
-            el.classList.add("aktif");
-          }
-        });
+        // Inisialisasi Firebase rating setelah data tempat ditampilkan
+        tampilkanRating(id);
+      })
+      .catch(error => {
+        document.getElementById("wisata-container").innerHTML = `<div class="alert alert-danger">${error.message}</div>`;
       });
-    }
-      // Inisialisasi Firebase rating setelah data tempat ditampilkan
-      tampilkanRating(id);
-    })
-    .catch(error => {
-      document.getElementById("wisata-container").innerHTML = `<div class="alert alert-danger">${error.message}</div>`;
-    });
   </script>
 
-  
+
   <script>
     const firebaseConfig = {
       apiKey: "AIzaSyBK1vKLs1KdsAfgex8uue77T8BH98p6tRY",
@@ -224,9 +236,10 @@
       appId: "1:904226782106:web:0190958c1a93ed677f9823"
     };
     // Inisialisasi Firebase
-  const app = firebase.initializeApp(firebaseConfig);
-  const database = firebase.database(app);
+    const app = firebase.initializeApp(firebaseConfig);
+    const database = firebase.database(app);
 
   </script>
 </body>
+
 </html>
