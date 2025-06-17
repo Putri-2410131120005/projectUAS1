@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* No specific CSS for .navbar here, as it uses Bootstrap classes and inline style */
+
+.contact-section {
+    flex-grow: 1; /* Allows main content to expand */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-image: url('anjungan-bg.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* White overlay with transparency */
+    z-index: 1;
+}
+
+.contact-form-container {
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly less transparent white background for form */
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    position: relative; /* To be above the overlay */
+    z-index: 2;
+}
+
+.form-title {
+    color: #007bff; /* Example title color */
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+.contact-form .form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 20px); /* Adjusting for padding */
+    padding: 12px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #fffac8; /* Light yellow background as in image */
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form .send-button {
+    background-color: #ffc107; /* Yellow background for send button */
+    color: #333;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    float: right; /* To position next to message box */
+}
+
+.contact-form .send-button:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+}
+
+.footer {
+    background-color: #3f51b5; /* Blue footer color */
+    color: #fff;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+    text-align: left;
+}
+
+.footer-column h3 {
+    color: #ffc107; /* Yellow for headings */
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #ffc107;
+}
+
+.footer-column p {
+    margin: 5px 0;
+}
+
+.social-media-icons {
+    margin-top: 15px;
+}
+
+.social-media-icons a {
+    color: #fff;
+    font-size: 1.5em;
+    margin-right: 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media-icons a:hover {
+    color: #ffc107;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* No specific navbar responsive CSS needed here as Bootstrap handles it */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+}
