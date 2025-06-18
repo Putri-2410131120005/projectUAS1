@@ -51,19 +51,19 @@ function updateCardRefs() {
 // Geser carousel ke kartu yang aktif
 function updateCarousel() {
   cards.forEach((card, index) => {
-    card.classList.remove('active');
+    card.classList.remove('active');//Kode ini mengiterasi setiap kartu di dalam carousel. Untuk setiap kartu, ia pertama-tama memastikan kelas active dihapus. Kemudian, jika indeks kartu saat ini (index) cocok dengan currentIndex (kartu yang seharusnya aktif), kelas active ditambahkan kembali ke kartu tersebut.
     if (index === currentIndex) {
       card.classList.add('active'); // Hanya kartu aktif yang diperbesar
     }
   });
 
-  const cardWidth = cards[0].offsetWidth + 20; // Ambil lebar kartu + gap
-  const offset = (currentIndex - 1) * cardWidth; // Hitung posisi geser
-  document.getElementById('carousel').style.transform = `translateX(${-offset}px)`;
+  const cardWidth = cards[0].offsetWidth + 20; // Ambil lebar kartu + gap//Bagian ini menghitung seberapa jauh elemen container carousel (yang memiliki ID carousel) perlu digeser secara horizontal agar kartu yang currentIndex berada di posisi yang diinginkan (misalnya, di tengah atau sebagai kartu utama).
+  const offset = (currentIndex - 1) * cardWidth; // Hitung posisi geser//bertujuan untuk menggeser carousel sehingga kartu dengan currentIndex berada di posisi "utama"
+  document.getElementById('carousel').style.transform = `translateX(${-offset}px)`;//translateX()adalah fungsi CSS yang menggeser elemen secara horizontal. Nilai-offsetberarti elemen akan digeser ke kiri sejauhoffset` yang dihitung
 }
 
-// Fungsi untuk tombol navigasi geser kiri/kanan
-function moveCarousel(direction) {
+// Fungsi untuk tombol navigasi geser kiri/kanan//Fungsi ini bukan menghasilkan animasi secara langsung, melainkan memicu terjadinya animasi.
+function moveCarousel(direction) { //Ketika tombol panah kiri atau kanan diklik, moveCarousel() dipanggil dengan direction (-1 atau 1).
   const maxIndex = cards.length - 1; // Index maksimal
   currentIndex += direction;         // Tambah atau kurangi index
   if (currentIndex < 0) currentIndex = 0; // Batasi ke kiri
