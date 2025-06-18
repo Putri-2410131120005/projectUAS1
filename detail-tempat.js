@@ -59,10 +59,9 @@ function setupMap(data) {
           L.latLng(coordinates[0], coordinates[1]),
           L.latLng(data.koordinat[0], data.koordinat[1]),
         ],
-        routeWhileDragging: false,
-        draggableWaypoints: false,
-        addWaypoints: false,
-        showAlternatives: false,
+        draggableWaypoints: true, //agar titik point dapat dipindahkan scr interaktif
+        addWaypoints: false, //agar pengguna tidak dapat menambahkan titik perantara baru ke rute
+        showAlternatives: true, // menampilkan atau menyarankan rute alternatif lainnya
       }).addTo(map);
 
       control.on("routesfound", function (e) {
@@ -86,7 +85,7 @@ async function getCoordinates(place) {
     `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(place)}`
   );
   const data = await response.json();
-  if (data.length > 0) {
+  if (data.length > 0) { //memeriksan apakah ada hasil yang ditemukan, dari beberapa tempat yang tersedia
     return [parseFloat(data[0].lat), parseFloat(data[0].lon)];
   }
   alert("Tempat tidak ditemukan!");
@@ -211,6 +210,8 @@ window.onload = function () {
       tandaiBintang(Math.floor(rata2));
     });
 
+
+    //KOMENTAR
     const daftarKomentar = document.getElementById("daftarKomentar");
     const komentarInput = document.getElementById("komentar");
 
@@ -230,7 +231,7 @@ window.onload = function () {
         komentarInput.value = "";
         tampilkanKomentar();
       }).catch(err => {
-        alert("Gagal mengirim komentar: " + err.message);
+        alert("Gagal mengirim komentar");
       });
     });
 
